@@ -69,17 +69,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
 
-    /* Unicode decoration using ::before pseudo-element */
-    &::before {
-        content: "\2022"; 
-        font-size: 30px;
-        color: #cc0000; 
-        margin-right: 10px; 
-        position: absolute;
-        left: -20px; 
-        top: 50%; 
-        transform: translateY(-50%); 
-    }
+
 
     /* Additional decoration using ::after pseudo-element */
     &::after {
@@ -105,16 +95,60 @@ h2 {
     z-index: 1;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    overflow-x: scroll;
-    white-space: nowrap;
+
+
+.projects {
+    width: 100%;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
 }
+
+.projects h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project h3 {
+    margin: 10px 0;
+}
+
+.project p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+
 
 .container2 {
     width: 80%;
@@ -141,35 +175,6 @@ h2 {
     padding-bottom: 20px;
     white-space: normal;
 
-}
-
-.project {
-    display: inline-block;
-    width: 300px;
-    margin-right: 20px;
-    text-align: center;
-    background-color: #e3e3e3;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    white-space: normal; 
-    vertical-align: top; 
-}
-
-.project img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.project a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.project h3 {
-    margin: 15px 0 10px;
-    font-size: 18px;
 }
 
 /* New styles for the showcase section */
