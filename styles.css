@@ -20,6 +20,7 @@ header {
     flex: 1;
     padding-left: 10px;
     padding-right: 10px;
+    min-width: 200px;
 }
 
 .header-text {
@@ -34,6 +35,7 @@ header {
     letter-spacing: 2px;
     margin-bottom: 20px;
     animation: fadeIn 2s ease-in-out;
+    flex: 1 100%; 
 }
 
 @keyframes fadeIn {
@@ -41,11 +43,28 @@ header {
     to { opacity: 1; }
 }
 
-
 .header-text h1 {
     margin: 0;
     font-size: 30px;
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .header-left, .header-right {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .header-text {
+        margin-bottom: 10px; 
+    }
+}
+
 
 header p {
     margin: 10px 0 0;
