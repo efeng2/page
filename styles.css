@@ -331,3 +331,31 @@ h2 {
     transform: scale(1.05);
     transition: transform 0.2s;
 }
+
+.footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #50b3a2;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #feb47b;
+}
