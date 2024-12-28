@@ -1,39 +1,55 @@
-function updateSelectedMedia(element) {
-    var selectedMediaContainer = element.closest('.project-media').querySelector('.selected-media');
-    var selectedImg = selectedMediaContainer.querySelector('img');
-    var selectedVideo = selectedMediaContainer.querySelector('video');
-    var newMediaPath = element.getAttribute('data-media');
-    var mediaType = element.getAttribute('data-media-type');
+document.addEventListener("DOMContentLoaded", () => {
+  const sections = document.querySelectorAll(".diagonal-section, .diagonal-section-alt");
 
-    if (mediaType === 'image') {
-        // Show selected image
-        selectedImg.src = newMediaPath;
-        selectedImg.style.display = 'inline'; // Show image
-        selectedVideo.style.display = 'none'; // Hide video if exists
-    } else if (mediaType === 'video') {
-        // Show selected video
-        selectedVideo.src = newMediaPath;
-        selectedVideo.poster = element.getAttribute('data-poster') || ''; // Set poster if provided
-        selectedVideo.style.display = 'inline'; // Show video
-        selectedImg.style.display = 'none'; // Hide image if exists
+  const observerOptions = {
+      root: null, // Viewport
+      threshold: 0.2, // Trigger when 20% of the section is visible
+  };
 
-        // Ensure video is loaded before playing
-        selectedVideo.addEventListener('loadedmetadata', function() {
-            selectedVideo.play().catch(function(error) {
-                console.log('Error playing the video:', error);
-            });
-        });
-        selectedVideo.load();
-    }
-}
+  const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add("section-visible");
+          }
+      });
+  };
 
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-
-// Set default selection to the first image in each project section
-document.addEventListener("DOMContentLoaded", function() {
-    var projectSections = document.querySelectorAll('.single-project');
-    projectSections.forEach(function(section) {
-        var firstImage = section.querySelector('.media-selector img');
-        updateSelectedMedia(firstImage); // Trigger update for default selection
-    });
+  sections.forEach(section => observer.observe(section));
 });
+
+document.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+
+  document.querySelectorAll(".diagonal-section, .diagonal-section-alt").forEach((section) => {
+      const speed = section.dataset.speed || 0.5; // Default parallax speed
+      const offset = scrollTop * speed;
+      
+      // Adjust background position for parallax effect
+      const backgroundPosition = `center ${offset}px`;
+      section.style.backgroundPosition = backgroundPosition;
+  });
+});
+
+document.addEventListener('scroll', function() {
+  const sections = document.querySelectorAll('section');
+  const navbarLinks = document.querySelectorAll('#navbar a');
+
+  let currentSection = '';
+
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    if (window.scrollY >= sectionTop - 60) { // Adjust the scroll position threshold
+      currentSection = section.getAttribute('id');
+    }
+  });
+
+  navbarLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href').includes(currentSection)) {
+      link.classList.add('active');
+    }
+  });
+});
+
