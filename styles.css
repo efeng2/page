@@ -14,4 +14,5 @@ body {
 
 header {
   position: relative; /* Set relative positioning to constrain particles */
+  background: linear-gradient(45deg, #1d3557, #457b9d, #a8dadc); /* Fallback background color */
 }
