@@ -75,7 +75,8 @@ document.getElementById('search').addEventListener('keypress', function (event) 
   }
 });
 
-// Trigger search on button click
-document.getElementById('search-btn').addEventListener('click', function () {
+document.getElementById('search-btn').addEventListener('click', function (event) {
+  event.preventDefault(); // Prevent the default action (e.g., page refresh)
   searchCards();
 });
+
