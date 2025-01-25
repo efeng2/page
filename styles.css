@@ -1,5 +1,6 @@
 body {
-  font-family: "Raleway", serif;
+  font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
 }
 
 .fallback {
