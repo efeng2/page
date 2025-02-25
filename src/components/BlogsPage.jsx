@@ -28,8 +28,8 @@ function Sidebar(props) {
     const latestUpdates = blogsData.slice(0, 3);
 
     const latestUpdatesArray = latestUpdates.map((project) => (
-        <li key={project.id} className="project-title">
-            <Link className="text-dark" to={`blog/${project.section}/${project.title}`}>
+        <li key={project.title} className="project-title">
+            <Link  className="text-dark" to={`${project.section}/${project.title}`}>
                 {project.title}
             </Link>
         </li>
@@ -47,8 +47,8 @@ function Sidebar(props) {
                 <div className={`project-list ${expandedSection === section ? 'expanded' : ''}`}>
                     <ul>
                         {sectionData.map((project) => (
-                            <li key={project.id} className="project-title">
-                                <Link className="text-dark" to={`blog/${project.section}/${project.title}`}>{project.title}</Link>
+                            <li key={project.title} className="project-title">
+                                <Link className="text-dark" to={`${project.section}/${project.title}`}>{project.title}</Link>
                             </li>
                         ))}
                     </ul>

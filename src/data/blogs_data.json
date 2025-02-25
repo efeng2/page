@@ -1,17 +1,17 @@
 [
     {
-        "title": "D-seperation",
+        "title": "D-Seperation",
         "date": "2025-02-25",
         "short_description": "D-seperation is used in Bayes Nets. In a system with multiple random variables, we want to know the conditionally independent of event A and B given the condition that other variables are observed.",
         "section": "ml_algorithms",
-        "img": "/page/images/blogs/d-seperation.jpg"
+        "img": "/page/images/blogs/d-seperation.PNG"
     },
     {
         "title": "Beginner's Guide to How to Use Bootstrap (Utilities, Responsiveness)",
         "date": "2025-02-25",
         "short_description": "CSS frameworks simplify styling by providing predefined CSS rules that can be easily integrated into your website by modifying its HTML structure. Bootstrap, created by Twitter in 2011, is the oldest and most popular CSS framework.",
         "section": "web_dev",
-        "img": "/page/images/blogs/beginner's_guide_to_how_to_use_bootstrap_(utilities,_responsiveness).jpg"
+        "img": "/page/images/blogs/beginner's_guide_to_how_to_use_bootstrap_(utilities,_responsiveness).png"
     },
     {
         "title": "How to Build a React App in 2025",

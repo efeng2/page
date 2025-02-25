@@ -7,16 +7,23 @@ export function BlogDetails() {
   let { section_name, blog_title } = useParams();
   const [blogContent, setBlogContent] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  
   useEffect(() => {
     const fetchBlogData = async () => {
       try {
-        const response = await fetch(`blogs/${section_name}/${blog_title}.md`);
-        console.log(`blogs/${section_name}/${blog_title}.md`);
-        if (!response.ok || data[0] === '<') {
+        const response = await fetch(`/page/blogs/${section_name}/${blog_title}.md`); // Updated path
+        if (!response.ok) {
           setErrorMessage('Sorry, this blog post does not exist.');
           setBlogContent('');
           return;
         }
+        const data = await response.text();
+        if (data[0] === '<') {
+          setErrorMessage('Sorry, this blog post does not exist.');
+          setBlogContent('');
+          return;
+        }
+  
         const htmlContent = marked(data, {
           renderer: new marked.Renderer(),
           highlight: function(code, lang) {
@@ -32,7 +39,7 @@ export function BlogDetails() {
     };
   
     fetchBlogData();
-  }, [section_name, blog_title]);  
+  }, [section_name, blog_title]);
 
   return (
     <div className="container container-blog m-4 m-lg-5">

@@ -29,11 +29,6 @@ header {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
 .card-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -50,10 +45,6 @@ header {
 .links {
   text-decoration: none;
   color: #333;
-}
-
-.blog-card .blog-post-item:hover {
-  background: #f9f9f9;
 }
 
 .blog-card .blog-link {
@@ -88,10 +79,6 @@ header {
   background: #007bff;
   color: white;
   transition: background 0.3s ease-in-out;
-}
-
-.project-card .btn:hover {
-  background: #0056b3;
 }
 
 .img-size {
@@ -212,12 +199,6 @@ header {
   /* transition: color 0.3s ease; */
 }
 
-/* Section Title Hover and Color Change */
-.hover-orange:hover {
-  color: orange;
-  transition: color 0.3s ease;
-}
-
 /* Arrow Icon for Expandable Sections */
 .arrow {
   margin-right: 8px;
@@ -250,12 +231,6 @@ header {
   padding: 5px 0;
 }
 
-@media (min-width: 1300px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
 .card-img {
   height: 100%;
   border-radius: 4px 0 0 4px;
@@ -263,9 +238,10 @@ header {
   border-radius: 4px 4px 0 0;
 }
 
-
-
-
+.container-blog img {
+  max-width: 100%; /* Makes sure the image never exceeds the width of its container */
+  height: auto;    /* Maintains the aspect ratio */
+}
 
 .quote-container {
   display: flex;
@@ -333,4 +309,29 @@ code {
 .container-blog {
   max-width: 1000px;  /* Adjust width as needed */
   margin: 0 auto;
+}
+
+.project-card .btn:hover {
+  background: #0056b3;
+}
+
+.blog-card .blog-post-item:hover {
+  background: #f9f9f9;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Title Hover and Color Change */
+.hover-orange:hover {
+  color: orange;
+  transition: color 0.3s ease;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1200px;
+  }
 }
