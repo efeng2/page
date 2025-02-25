@@ -1,4 +1,4 @@
-# D-seperation
+# D-Seperation
 2025-02-25
 
 ## Definition and Use
@@ -12,4 +12,4 @@ Example:
 
 A ⊥ B | C, D
 
-![image](images/blogs/D-Seperation.PNG)
+![D-Seperation](../../images/blogs/d-seperation.PNG)
