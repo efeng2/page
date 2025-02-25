@@ -14,7 +14,7 @@ export function Navbar(props) {
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary px-2">
             <div className="container-fluid">
-                <NavLink className="navbar-brand hover-orange" to="/">Welcome</NavLink>
+                <NavLink className="navbar-brand hover-orange" to="/page">Welcome</NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -24,10 +24,10 @@ export function Navbar(props) {
                             <NavLink className="nav-link hover-orange" aria-current="page" to="/page"> About </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link hover-orange" to="/projects">Projects</NavLink>
+                            <NavLink className="nav-link hover-orange" to="/page/projects">Projects</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className="nav-link hover-orange" to="/blog">Blog</NavLink>
+                            <NavLink className="nav-link hover-orange" to="/page/blog">Blog</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink

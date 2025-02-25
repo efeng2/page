@@ -38,7 +38,7 @@ function BlogCard(props) {
                     </div>
                     <div className="col-8 col-lg-9">
                         <div className="card-body">
-                            <Link to={`/blog/${section}/${title}`} className="text-decoration-none">
+                            <Link to={`page/blog/${section}/${title}`} className="text-decoration-none">
                                 <h2 className="card-title">{title}</h2>
                             </Link>
                             <div className="d-flex flex-wrap">

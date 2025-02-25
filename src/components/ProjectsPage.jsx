@@ -28,7 +28,7 @@ function Sidebar(props) {
 
     const latestUpdatesArray = latestUpdates.map((project) => (
         <li key={project.title} className="project-title">
-            <Link className="text-dark hover-orange" to={`/projects#${project.title}`}>
+            <Link className="text-dark hover-orange" to={`page/projects#${project.title}`}>
                 {project.title}
             </Link>
         </li>
@@ -47,7 +47,7 @@ function Sidebar(props) {
                     <ul>
                         {sectionData.map((project) => (
                             <li key={project.title} className="project-title">
-                                <Link className="text-dark hover-orange" to={`/projects#${project.title}`}>{project.title}</Link>
+                                <Link className="text-dark hover-orange" to={`page/projects#${project.title}`}>{project.title}</Link>
                             </li>
                         ))}
                     </ul>

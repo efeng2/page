@@ -3,7 +3,7 @@
     "title": "K-in-a-row AI Game Agent",
     "date": "Feburary 2025",
     "skills": "Skills: python, minimax, alpha-beta pruning",
-    "img": "/images/projects/game_agent.png",
+    "img": "/page/images/projects/game_agent.png",
     "description": "An AI game agent that uses minimax and alpha-beta pruning to serach what the next best move of the game is.",
     "section": "ml_algorithms",
     "linksData": [
@@ -17,7 +17,7 @@
     "title": "Population Aging Transition Model",
     "date": "October 2024",
     "skills": "Skills: mathematical modeling, python",
-    "img": "/images/projects/population.png",
+    "img": "/page/images/projects/population.png",
     "description": "A system of differential equations designed to simulate demographic shifts across three age groups, addressing workforce sustainability challenges.",
     "section": "ml_algorithms",
     "linksData": [
@@ -35,7 +35,7 @@
     "title": "Eatvolution",
     "date": "October 2024, Dubhacks Contest Entry",
     "skills": "Skills: perplexity AI, react, typescript, mysql, node.js, html, css, javascript",
-    "img": "/images/projects/evolution.jpg",
+    "img": "/page/images/projects/evolution.jpg",
     "description": "A system of differential equations designed to simulate demographic shifts across three age groups, addressing workforce sustainability challenges.",
     "section": "cs_programming",
     "linksData": [
@@ -53,7 +53,7 @@
     "title": "Status and Locations of Shelter Dogs",
     "date": "March 2024",
     "skills": "Skills: Observable, Vegalite, D3",
-    "img": "/images/projects/dogs.gif",
+    "img": "/page/images/projects/dogs.gif",
     "description": "A visualization project to track shelter dogs' locations and statuses, aiming to promote adoption over purchasing pets.",
     "section": "data_vis",
     "linksData": [
@@ -67,7 +67,7 @@
     "title": "Exposure of PM 2.5 Concentration, Cardiovascular Disease, and Proximity to Hospitals",
     "date": "December 2023",
     "skills": "Skills: QGIS",
-    "img": "/images/projects/qgis.png",
+    "img": "/page/images/projects/qgis.png",
     "description": "A geospatial analysis exploring the correlation between PM 2.5 exposure, cardiovascular disease, and hospital accessibility in Washington State.",
     "section": "data_vis",
     "linksData": [
@@ -81,7 +81,7 @@
     "title": "Estore - Website",
     "date": "June 2023",
     "skills": "Skills: node.js, mySQL, html, css, javascript",
-    "img": "/images/projects/eshop.gif",
+    "img": "/page/images/projects/eshop.gif",
     "description": "A mock online clothing store developed with a full-stack approach, implementing front-end and back-end technologies.",
     "section": "web_dev",
     "linksData": [
@@ -95,7 +95,7 @@
     "title": "Factors that Contribute to the Changes in Global Happiness and the Impact of the Pandemic",
     "date": "June 2022",
     "skills": "Skills: Python, Sklearn",
-    "img": "/images/projects/global_happiness.png",
+    "img": "/page/images/projects/global_happiness.png",
     "description": "A machine learning-based analysis exploring factors influencing global happiness scores, including the impact of the pandemic.",
     "section": "ml_algorithms",
     "linksData": [
@@ -113,7 +113,7 @@
     "title": "Popularity of News Articles and Their Sources",
     "date": "August 2022",
     "skills": "Skills: R Shiny, R, Python, ggplot2, dplyr",
-    "img": "/images/projects/rshiny.png",
+    "img": "/page/images/projects/rshiny.png",
     "description": "An analysis platform investigating the preferred news sources of the general public using R Shiny and data visualization techniques.",
     "section": "data_vis",
     "linksData": [
@@ -131,7 +131,7 @@
     "title": "Glide",
     "date": "2022 Dubhacks Contest Entry",
     "skills": "Skills: T-Mobile's DevEdge loT Developer Kit",
-    "img": "/images/projects/glide.gif",
+    "img": "/page/images/projects/glide.gif",
     "section": "cs_programming",
     "linksData": [
       {
@@ -148,7 +148,7 @@
     "title": "Propinquity",
     "date": "June 2022",
     "skills": "Skills: Information System Design",
-    "img": "/images/projects/propinquity.png",
+    "img": "/page/images/projects/propinquity.png",
     "description": "A social app designed to integrate opportunities for social connections into everyday tasks, fostering relationships through proximity-based interactions.",
     "section": "cs_programming",
     "linksData": [
@@ -162,7 +162,7 @@
     "title": "Eco",
     "date": "2022 Husky Hackathon Contest Entry",
     "skills": "Skills: Information System Design, Figma",
-    "img": "/images/projects/eco.png",
+    "img": "/page/images/projects/eco.png",
     "section": "cs_programming",
     "linksData": [
       {
@@ -179,7 +179,7 @@
     "title": "UW Mind Hub",
     "date": "2021 Dubhacks Contest Entry",
     "skills": "Skills: Figma",
-    "img": "/images/projects/mindhub.png",
+    "img": "/page/images/projects/mindhub.png",
     "section": "cs_programming",
     "linksData": [
       {
@@ -200,7 +200,7 @@
     "title": "ASL Alphabet Recognition Project",
     "date": "August 2020",
     "skills": "Skills: ML - SVC, XGBoost, ANNs",
-    "img": "/images/projects/asl.png",
+    "img": "/page/images/projects/asl.png",
     "section": "ml_algorithms",
     "description": "Developed a project to translate American Sign Language (ASL) for individuals with hearing difficulties using Leap Motion for gesture recognition.",
     "linksData": [

@@ -30,7 +30,7 @@ export const AboutGrid = (props) => {
                       <div className="project-image">
                         <img src={project.img} alt={project.title} className="img-fluid"/> 
                       </div>
-                      <Link className="btn btn-primary mt-3 mb-5" to={`/projects#${project.title}`}>View Project</Link>
+                      <Link className="btn btn-primary mt-3 mb-5" to={`page/projects#${project.title}`}>View Project</Link>
 
                   </Carousel.Item>
                 ))}
@@ -142,7 +142,7 @@ const LatestBlogPosts = (props) => {
         <ul className="list-unstyled">
           {latest_blogs_data.map((blog, index) => (
             <li key={index} className="blog-post-item d-flex align-items-center">
-              <Link to={`/blog/${blog.section}/${blog.title}`} className="blog-link d-flex align-items-center w-100">
+              <Link to={`page/blog/${blog.section}/${blog.title}`} className="blog-link d-flex align-items-center w-100">
                 <div className="icon-container me-3">
                   <i className={`bi ${blogIcons[index % blogIcons.length]} blog-icon`}></i>
                 </div>
