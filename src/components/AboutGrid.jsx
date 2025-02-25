@@ -25,7 +25,7 @@ export const AboutGrid = (props) => {
                 indicators={true}>
                 {latest_projects_data.map((project, index) => (
                   <Carousel.Item key={index}>
-                      <h5 className="blog-post-item"><Link className="hover-orange links" to={`/projects#${project.title}`}>{project.title}</Link></h5>
+                      <h5 className="blog-post-item"><Link className="hover-orange links" to={`page/projects#${project.title}`}>{project.title}</Link></h5>
                       <p className="text-muted">{project.date + ': ' + project.description}</p>
                       <div className="project-image">
                         <img src={project.img} alt={project.title} className="img-fluid"/> 
@@ -78,7 +78,7 @@ export const AboutGrid = (props) => {
               <div className="row text-center">
                 <div className="col-4">
                   <img 
-                    src="page/images/chess.jpg" 
+                    src="https://efeng2.github.io/page/images/chess.jpg" 
                     alt="Playing Chess" 
                     className="img-fluid rounded shadow-sm img-size" 
                   />
@@ -86,7 +86,7 @@ export const AboutGrid = (props) => {
                 </div>
                 <div className="col-4">
                   <img 
-                    src="page/images/art.png" 
+                    src="https://efeng2.github.io/page/images/art.png" 
                     alt="Art" 
                     className="img-fluid rounded shadow-sm img-size" 
                   />
@@ -94,7 +94,7 @@ export const AboutGrid = (props) => {
                 </div>
                 <div className="col-4">
                   <img 
-                    src="page/images/cardistry.jpg" 
+                    src="https://efeng2.github.io/page/images/cardistry.jpg" 
                     alt="Cardistry" 
                     className="img-fluid rounded shadow-sm img-size" 
                   />

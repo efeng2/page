@@ -7,14 +7,12 @@ export function BlogDetails() {
   let { section_name, blog_title } = useParams();
   const [blogContent, setBlogContent] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-
   useEffect(() => {
-    fetch(`page/blogs/${section_name}/${blog_title}.md`)
-      .then(function(response) {
-        return response.text();
-      })
-      .then(function(data) {
-        if (data[0] == '<') {
+    const fetchBlogData = async () => {
+      try {
+        const response = await fetch(`page/blogs/${section_name}/${blog_title}.md`);
+        console.log(`page/blogs/${section_name}/${blog_title}.md`);
+        if (!response.ok || data[0] === '<') {
           setErrorMessage('Sorry, this blog post does not exist.');
           setBlogContent('');
           return;
@@ -27,12 +25,14 @@ export function BlogDetails() {
         });
         setBlogContent(htmlContent);
         setErrorMessage('');
-      })
-      .catch(function(error) {
+      } catch (error) {
         console.error(error);
         setErrorMessage(error.message);
-      });
-  }, [section_name, blog_title]);
+      }
+    };
+  
+    fetchBlogData();
+  }, [section_name, blog_title]);  
 
   return (
     <div className="container container-blog m-4 m-lg-5">
