@@ -60,7 +60,7 @@ export function Header() {
                         </div>
                     </div>
                     <div className="col-md-4 text-center mb-4 mt-5 mt-md-4">
-                    <img src="src/assets/profile.jpg" alt="Profile" className="img-fluid rounded-circle" />
+                    <img src="page/images/profile.jpg" alt="Profile" className="img-fluid rounded-circle" />
                     </div>
                 </div>
             </div>
