@@ -311,6 +311,12 @@ code {
   margin: 0 auto;
 }
 
+/* Section Title Hover and Color Change */
+.hover-orange:hover {
+  color: orange;
+  transition: color 0.3s ease;
+}
+
 .project-card .btn:hover {
   background: #0056b3;
 }
@@ -324,11 +330,7 @@ code {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Section Title Hover and Color Change */
-.hover-orange:hover {
-  color: orange;
-  transition: color 0.3s ease;
-}
+
 
 @media (min-width: 1300px) {
   .container {

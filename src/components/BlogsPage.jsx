@@ -29,7 +29,7 @@ function Sidebar(props) {
 
     const latestUpdatesArray = latestUpdates.map((project) => (
         <li key={project.title} className="project-title">
-            <Link  className="text-dark" to={`${project.section}/${project.title}`}>
+            <Link  className="links hover-orange" to={`${project.section}/${project.title}`}>
                 {project.title}
             </Link>
         </li>
@@ -40,7 +40,7 @@ function Sidebar(props) {
 
         return (
             <div key={section} className="section-container">
-                <div className="section-title" onClick={() => handleSectionClick(section)}>
+                <div className="section-title hover-orange" onClick={() => handleSectionClick(section)}>
                     <span className={`arrow ${expandedSection === section ? 'rotated' : ''}`}>▼</span>
                     {section.replace(/_/g, ' ').toUpperCase()}
                 </div>
@@ -48,7 +48,7 @@ function Sidebar(props) {
                     <ul>
                         {sectionData.map((project) => (
                             <li key={project.title} className="project-title">
-                                <Link className="text-dark" to={`${project.section}/${project.title}`}>{project.title}</Link>
+                                <Link className="links hover-orange" to={`${project.section}/${project.title}`}>{project.title}</Link>
                             </li>
                         ))}
                     </ul>
