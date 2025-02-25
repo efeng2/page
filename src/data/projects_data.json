@@ -92,7 +92,7 @@
     ]
   },
   {
-    "title": "Global Happiness Trends",
+    "title": "Factors that Contribute to the Changes in Global Happiness and the Impact of the Pandemic",
     "date": "June 2022",
     "skills": "Skills: Python, Sklearn",
     "img": "src/assets/projects/global_happiness.png",
@@ -110,7 +110,7 @@
     ]
   },
   {
-    "title": "Popularity of New Articles",
+    "title": "Popularity of News Articles and Their Sources",
     "date": "August 2022",
     "skills": "Skills: R Shiny, R, Python, ggplot2, dplyr",
     "img": "src/assets/projects/rshiny.png",
