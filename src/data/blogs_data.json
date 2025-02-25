@@ -4,69 +4,69 @@
         "date": "2025-02-25",
         "short_description": "D-seperation is used in Bayes Nets. In a system with multiple random variables, we want to know the conditionally independent of event A and B given the condition that other variables are observed.",
         "section": "ml_algorithms",
-        "img": "src/assets/blogs/d-seperation.jpg"
+        "img": "/images/blogs/d-seperation.jpg"
     },
     {
         "title": "Beginner's Guide to How to Use Bootstrap (Utilities, Responsiveness)",
         "date": "2025-02-25",
         "short_description": "CSS frameworks simplify styling by providing predefined CSS rules that can be easily integrated into your website by modifying its HTML structure. Bootstrap, created by Twitter in 2011, is the oldest and most popular CSS framework.",
         "section": "web_dev",
-        "img": "src/assets/blogs/beginner's_guide_to_how_to_use_bootstrap_(utilities,_responsiveness).jpg"
+        "img": "/images/blogs/beginner's_guide_to_how_to_use_bootstrap_(utilities,_responsiveness).jpg"
     },
     {
         "title": "How to Build a React App in 2025",
         "date": "2025-02-24",
         "short_description": "In this guide, we explore the latest features and best practices for building React apps in 2025.",
         "section": "web_dev",
-        "img": "src/assets/blogs/how_to_build_a_react_app_in_2025.jpg"
+        "img": "/images/blogs/how_to_build_a_react_app_in_2025.jpg"
     },
     {
         "title": "如何使用 Github Pages 免费发布, 部署网站",
         "date": "2024-08-05",
         "short_description": "Github Pages 是一个静态站点托管服务，这个服务为个人、项目或组织提供了一个简单的方式来创建和部署网站",
         "section": "ml_algorithms",
-        "img": "src/assets/blogs/如何使用_github_pages_免费发布,_部署网站.jpg"
+        "img": "/images/blogs/如何使用_github_pages_免费发布,_部署网站.jpg"
     },
     {
         "title": "(Hugging Face) 如何训练和评估 Transformer 模型 (代码 + 实践)",
         "date": "2024-08-03",
         "short_description": "Hugging Face 的 ` datasets`  库极大地简化了数据集的下载和预处理过程。",
         "section": "ml_algorithms",
-        "img": "src/assets/blogs/(hugging_face)_如何训练和评估_transformer_模型_(代码_+_实践).jpg"
+        "img": "/images/blogs/(hugging_face)_如何训练和评估_transformer_模型_(代码_+_实践).jpg"
     },
     {
         "title": "(Hugging Face) Transformers 的 Tokenizers - 词语分割器 + 实践",
         "date": "2024-07-27",
         "short_description": "**Tokenization**，即对句子变成token进行处理，是自然语言处理（NLP）中最基本且首要的步骤，指将输入文本分割为可处理的token单元。",
         "section": "ml_algorithms",
-        "img": "src/assets/blogs/(hugging_face)_transformers_的_tokenizers_-_词语分割器_+_实践.jpg"
+        "img": "/images/blogs/(hugging_face)_transformers_的_tokenizers_-_词语分割器_+_实践.jpg"
     },
     {
         "title": "Hugging Face基础：简单讲解Transformer模型和结构",
         "date": "2024-07-22",
         "short_description": "Transformer 是一个基于自注意力机制（Self-attention mechanism）的神经网络架构， 是由2017年的论文《Attention is All You Need》中提出的，为自然语言处理（Natural Language Processing）领域带来了新的模型架构。他是一种seq2seq模型（Sequence to Sequence Model）",
         "section": "ml_algorithms",
-        "img": "src/assets/blogs/hugging_face基础：简单讲解transformer模型和结构.jpg"
+        "img": "/images/blogs/hugging_face基础：简单讲解transformer模型和结构.jpg"
     },
     {
         "title": "Classifiers (Machine Learning Algorithms)",
         "date": "2023-10-11",
         "short_description": "- Query to Leaves",
         "section": "ml_algorithms",
-        "img": "src/assets/blogs/classifiers_(machine_learning_algorithms).jpg"
+        "img": "/images/blogs/classifiers_(machine_learning_algorithms).jpg"
     },
     {
         "title": "Clustering",
         "date": "2023-10-11",
         "short_description": "- Labels Are Unknown",
         "section": "ml_algorithms",
-        "img": "src/assets/blogs/clustering.jpg"
+        "img": "/images/blogs/clustering.jpg"
     },
     {
         "title": "Deep Learning",
         "date": "2023-10-11",
         "short_description": "- Many Perceptrons, Likely to Overfit",
         "section": "ml_algorithms",
-        "img": "src/assets/blogs/deep_learning.jpg"
+        "img": "/images/blogs/deep_learning.jpg"
     }
 ]

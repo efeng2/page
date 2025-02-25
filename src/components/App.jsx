@@ -21,7 +21,7 @@ function App() {
         <>
             <Navbar />
             <Routes>
-                <Route path="about" element={<AboutPage latest_blogs_data={latest_blogs_data} latest_projects_data={latest_projects_data} />} />
+                <Route path="page" element={<AboutPage latest_blogs_data={latest_blogs_data} latest_projects_data={latest_projects_data} />} />
                 <Route path="projects" element={<ProjectsPage projectsData={PROJECTS_DATA} />}>
                     <Route index element={<ProjectsGrid  projectsData={PROJECTS_DATA}/>} />
                 </Route>
@@ -30,7 +30,7 @@ function App() {
                     <Route index element={<BlogGrid blogsData={BLOGS_DATA}/>} />
                 </Route>
                 <Route path="connect" element={<Connect />} />
-                <Route path="*" element={<Navigate to="/about" />} />
+                <Route path="*" element={<Navigate to="/page" />} />
             </Routes>
             <Footer />
         </>
