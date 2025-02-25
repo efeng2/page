@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 export function Header() {
 
@@ -56,11 +57,11 @@ export function Header() {
                         <h1>Emily Feng</h1>
                         <p className="lead">Data Science Professional | Creative Enthusiast</p>
                         <div className="d-flex justify-content-start">
-                            <a href="#projects" className="btn btn-primary mt-3 px-4 py-2">View Projects</a>
+                            <Link to="/projects" className="btn btn-primary mt-3 px-4 py-2">View Projects</Link>
                         </div>
                     </div>
                     <div className="col-md-4 text-center mb-4 mt-5 mt-md-4">
-                    <img src="images/profile.jpg" alt="Profile" className="img-fluid rounded-circle" />
+                    <img src="https://efeng2.github.io/page/images/profile.jpg" alt="Profile" className="img-fluid rounded-circle" />
                     </div>
                 </div>
             </div>
