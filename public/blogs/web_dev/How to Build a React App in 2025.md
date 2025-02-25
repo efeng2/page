@@ -86,3 +86,10 @@ function App() {
 }
 export default App;
 ```
+
+GitHub Pages does not support JSX or modern ES6 modules directly.
+If deploying to GitHub Pages, don't forget to build first 
+
+```{bash}
+npm run build
+```
