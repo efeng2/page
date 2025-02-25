@@ -12,4 +12,4 @@ Example:
 
 A ⊥ B | C, D
 
-![D-Seperation](../../images/blogs/d-separation.PNG)
+![D-Seperation](../../images/blogs/d-separation.png)
