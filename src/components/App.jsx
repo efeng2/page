@@ -20,7 +20,7 @@ function App() {
     return (
         <>
             <Navbar />
-            <Routes basename="/page">
+            <Routes>
                 <Route path="page" element={<AboutPage latest_blogs_data={latest_blogs_data} latest_projects_data={latest_projects_data} />} />
                 <Route path="page/projects" element={<ProjectsPage projectsData={PROJECTS_DATA} />}>
                     <Route index element={<ProjectsGrid  projectsData={PROJECTS_DATA}/>} />

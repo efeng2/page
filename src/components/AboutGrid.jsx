@@ -78,7 +78,7 @@ export const AboutGrid = (props) => {
               <div className="row text-center">
                 <div className="col-4">
                   <img 
-                    src="images/chess.jpg" 
+                    src="page/images/chess.jpg" 
                     alt="Playing Chess" 
                     className="img-fluid rounded shadow-sm img-size" 
                   />
@@ -86,7 +86,7 @@ export const AboutGrid = (props) => {
                 </div>
                 <div className="col-4">
                   <img 
-                    src="images/art.png" 
+                    src="page/images/art.png" 
                     alt="Art" 
                     className="img-fluid rounded shadow-sm img-size" 
                   />
@@ -94,7 +94,7 @@ export const AboutGrid = (props) => {
                 </div>
                 <div className="col-4">
                   <img 
-                    src="images/cardistry.jpg" 
+                    src="page/images/cardistry.jpg" 
                     alt="Cardistry" 
                     className="img-fluid rounded shadow-sm img-size" 
                   />
