@@ -1,5 +1,5 @@
 # Beginner's Guide to How to Use Bootstrap (Utilities, Responsiveness)
-2025-02-25
+2025-01-20
 
 # Bootstrap
 CSS frameworks simplify styling by providing predefined CSS rules that can be easily integrated into your website by modifying its HTML structure. Bootstrap, created by Twitter in 2011, is the oldest and most popular CSS framework.

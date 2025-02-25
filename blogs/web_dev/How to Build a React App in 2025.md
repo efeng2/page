@@ -1,5 +1,5 @@
 # How to Build a React App in 2025
-2025-02-24
+2025-02-09
 
 ## Introduction
 In this guide, we explore the latest features and best practices for building React apps in 2025. 
