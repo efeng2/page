@@ -8,7 +8,7 @@ CSS frameworks simplify styling by providing predefined CSS rules that can be ea
 
 Visit the [official Bootstrap website](https://getbootstrap.com/) and navigate to the CDN section.
 
-![CDN Location](<page/images/blogs/Beginner's Guide to How to Use Bootstrap (Utilities, Responsiveness).png>)
+![CDN](../../images/blogs/beginner's_guide_to_how_to_use_bootstrap_(utilities,_responsiveness).png)
 
 Copy the first link and paste it into the `<head>` section of your HTML file:
 

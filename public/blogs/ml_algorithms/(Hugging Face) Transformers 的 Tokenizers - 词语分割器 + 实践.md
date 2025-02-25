@@ -12,7 +12,7 @@
 ## 基于单词分割（Word-Based Tokenization）
 又称**词粒度**，分词按空格分割或按标点符号分割，词汇表中每个单词都被赋予一个独特的ID
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/92d61edabd3f425cb6fcff5a92234cd8.png)
+![Tokenizer](https://i-blog.csdnimg.cn/direct/92d61edabd3f425cb6fcff5a92234cd8.png)
 
 优点：
 - 每个ID都承载着自己的含义，没有歧义
@@ -27,7 +27,7 @@
 ## 基于字符分割（Character-Based Tokenization）
 又称**字粒度**，它将原始文本按字符分割。在英文中文本按字母分割，在中文中文本则按字分割。
 词汇表中每个字符赐予一个独特的ID
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/5f873086412f414cabf0ac30ee043f44.png)
+![Tokenizer](https://i-blog.csdnimg.cn/direct/5f873086412f414cabf0ac30ee043f44.png)
 
 优点：
 - 词表很小
@@ -40,7 +40,7 @@
 又称**子词粒度**，将原始文本转换为子词 ，介于基于单词分割和基于字符分割之间。
 分词算法规则为**常用词**不被分割成更小的子词，而**罕见词**应被分解成有意义的子词，如单词后缀、词根、等。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/f7a7289ece2b496db576d6bda90f46b9.png)
+![Tokenizer](https://i-blog.csdnimg.cn/direct/f7a7289ece2b496db576d6bda90f46b9.png)
 
 机器需要知道token是独立的单词还是某个单词的后缀，通常会引入特定的符号作为标识，比如在BERT模型中会使用 "##s" 来指示这个token是词后缀
 

@@ -164,6 +164,7 @@
     "skills": "Skills: Information System Design, Figma",
     "img": "/page/images/projects/eco.png",
     "section": "cs_programming",
+    "description": "Second Place - A Green Logistics project on how construction businesses can contribute to a carbon neutral environment by creating an platform for them to mangage their resource allocations.",
     "linksData": [
       {
         "website_name": "Website",
@@ -181,6 +182,7 @@
     "skills": "Skills: Figma",
     "img": "/page/images/projects/mindhub.png",
     "section": "cs_programming",
+    "description": "2021 Dubhacks Contest Entry - Cybersource Visa Sponsership Award: a prototype app aimed to increase student wellness and connectivity.",
     "linksData": [
       {
         "website_name": "Devpost",

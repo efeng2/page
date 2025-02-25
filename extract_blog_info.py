@@ -36,7 +36,7 @@ def extract_blog_info(md_file_path):
             section = md_file_path.split(os.sep)[2]  # Use os.sep for platform compatibility
 
             # Construct image path from title (replace spaces with underscores and lowercase)
-            img = f"src/assets/blogs/{title.replace(' ', '_').lower()}.jpg"
+            img = f"/page/images/blogs/{title.replace(' ', '_').lower()}.png"
 
             # Return the extracted data
             return {
