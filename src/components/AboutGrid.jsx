@@ -25,12 +25,12 @@ export const AboutGrid = (props) => {
                 indicators={true}>
                 {latest_projects_data.map((project, index) => (
                   <Carousel.Item key={index}>
-                      <h5 className="blog-post-item"><Link className="hover-orange links" to={`page/projects#${project.title}`}>{project.title}</Link></h5>
+                      <h5 className="blog-post-item"><Link className="hover-orange links" to={`projects#${project.title}`}>{project.title}</Link></h5>
                       <p className="text-muted">{project.date + ': ' + project.description}</p>
                       <div className="project-image">
                         <img src={project.img} alt={project.title} className="img-fluid"/> 
                       </div>
-                      <Link className="btn btn-primary mt-3 mb-5" to={`page/projects#${project.title}`}>View Project</Link>
+                      <Link className="btn btn-primary mt-3 mb-5" to={`projects#${project.title}`}>View Project</Link>
 
                   </Carousel.Item>
                 ))}
@@ -78,7 +78,7 @@ export const AboutGrid = (props) => {
               <div className="row text-center">
                 <div className="col-4">
                   <img 
-                    src="https://efeng2.github.io/page/images/chess.jpg" 
+                    src="images/chess.jpg" 
                     alt="Playing Chess" 
                     className="img-fluid rounded shadow-sm img-size" 
                   />
@@ -86,7 +86,7 @@ export const AboutGrid = (props) => {
                 </div>
                 <div className="col-4">
                   <img 
-                    src="https://efeng2.github.io/page/images/art.png" 
+                    src="images/art.png" 
                     alt="Art" 
                     className="img-fluid rounded shadow-sm img-size" 
                   />
@@ -94,7 +94,7 @@ export const AboutGrid = (props) => {
                 </div>
                 <div className="col-4">
                   <img 
-                    src="https://efeng2.github.io/page/images/cardistry.jpg" 
+                    src="images/cardistry.jpg" 
                     alt="Cardistry" 
                     className="img-fluid rounded shadow-sm img-size" 
                   />
@@ -142,7 +142,7 @@ const LatestBlogPosts = (props) => {
         <ul className="list-unstyled">
           {latest_blogs_data.map((blog, index) => (
             <li key={index} className="blog-post-item d-flex align-items-center">
-              <Link to={`page/blog/${blog.section}/${blog.title}`} className="blog-link d-flex align-items-center w-100">
+              <Link to={`blog/${blog.section}/${blog.title}`} className="blog-link d-flex align-items-center w-100">
                 <div className="icon-container me-3">
                   <i className={`bi ${blogIcons[index % blogIcons.length]} blog-icon`}></i>
                 </div>

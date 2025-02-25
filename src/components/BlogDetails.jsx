@@ -10,8 +10,8 @@ export function BlogDetails() {
   useEffect(() => {
     const fetchBlogData = async () => {
       try {
-        const response = await fetch(`page/blogs/${section_name}/${blog_title}.md`);
-        console.log(`page/blogs/${section_name}/${blog_title}.md`);
+        const response = await fetch(`blogs/${section_name}/${blog_title}.md`);
+        console.log(`blogs/${section_name}/${blog_title}.md`);
         if (!response.ok || data[0] === '<') {
           setErrorMessage('Sorry, this blog post does not exist.');
           setBlogContent('');

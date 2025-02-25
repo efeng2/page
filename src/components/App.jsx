@@ -21,16 +21,16 @@ function App() {
         <>
             <Navbar />
             <Routes>
-                <Route path="page" element={<AboutPage latest_blogs_data={latest_blogs_data} latest_projects_data={latest_projects_data} />} />
-                <Route path="page/projects" element={<ProjectsPage projectsData={PROJECTS_DATA} />}>
+                <Route index element={<AboutPage latest_blogs_data={latest_blogs_data} latest_projects_data={latest_projects_data} />} />
+                <Route path="projects" element={<ProjectsPage projectsData={PROJECTS_DATA} />}>
                     <Route index element={<ProjectsGrid  projectsData={PROJECTS_DATA}/>} />
                 </Route>
-                <Route path="page/blog" element={<BlogsPage blogsData={BLOGS_DATA}/>}>
+                <Route path="blog" element={<BlogsPage blogsData={BLOGS_DATA}/>}>
                     <Route path=":section_name/:blog_title" element={<BlogDetails />} />
                     <Route index element={<BlogGrid blogsData={BLOGS_DATA}/>} />
                 </Route>
-                <Route path="page/connect" element={<Connect />} />
-                <Route path="*" element={<Navigate to="/page"/>} />
+                <Route path="connect" element={<Connect />} />
+                <Route path="*" element={<Navigate to="/"/>} />
             </Routes>
             <Footer />
         </>
