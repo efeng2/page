@@ -2,7 +2,7 @@
 
 ### Website: [efeng2.github.io/page/about](https://efeng2.github.io/page/about)
 
-This website serves as a center for showcasing my professional journey, accomplishments, and skills. It is continuously updated to reflect the latest developments in my projects, blog posts, and professional experiences.
+This website is a center for showcasing my professional journey, accomplishments, and skills. It is continuously updated to reflect the latest developments in my projects, blog posts, and professional experiences.
 
 ### Features
 
