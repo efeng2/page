@@ -1,6 +1,6 @@
 ## Professional Portfolio
 
-### Website: [efeng2.github.io/page/about](https://efeng2.github.io/page)
+### Website: [efeng2.github.io/page](https://efeng2.github.io/page)
 
 This website is a center for showcasing my professional journey, accomplishments, and skills. It is continuously updated to reflect the latest developments in my projects, blog posts, and professional experiences.
 
