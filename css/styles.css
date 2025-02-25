@@ -1,0 +1,336 @@
+/* Global Styles */
+body {
+  font-family: "Raleway", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 350;
+}
+
+/* Background Styles */
+.fallback, .particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(45deg, #1d3557, #457b9d, #a8dadc);
+}
+
+header {
+  position: relative;
+}
+
+/* General Styles */
+.container {
+  margin: auto;
+}
+
+.card {
+  border: none;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Blog Section */
+.blog-card .blog-post-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease-in-out;
+}
+
+.links {
+  text-decoration: none;
+  color: #333;
+}
+
+.blog-card .blog-post-item:hover {
+  background: #f9f9f9;
+}
+
+.blog-card .blog-link {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.blog-card .blog-item-content {
+  display: flex;
+  align-items: center;
+}
+
+.icon-container {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+/* Project Section */
+.project-card img {
+  width: 100%;
+  height: 20rem;
+  border-radius: 5px;
+  margin: 10px 0;
+  object-fit: cover;
+  object-position: 0% 0%
+}
+
+.project-card .btn {
+  background: #007bff;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.project-card .btn:hover {
+  background: #0056b3;
+}
+
+.img-size {
+  width: 100%;
+  height: 8rem;
+  object-fit: cover;
+}
+
+/* Skills Section */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill-item {
+  background: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Achievements Section */
+.achievements-list {
+  list-style: none;
+  padding: 0;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+}
+
+.achievement-item i {
+  color: gold;
+  font-size: 1.2rem;
+}
+
+.card-title{
+  font-weight: 400;
+}
+
+/* Sidebar Container */
+.sidebar {
+  position: sticky; /* Makes the sidebar stick to the top when scrolling */
+  top: 0; /* When the top of the sidebar reaches the top of the viewport, it will stick */
+  left: 0;
+  width: 250px;
+  height: auto; /* Height of sidebar can be dynamic */
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  overflow-y: auto; /* Allows sidebar to scroll if needed */
+  z-index: 1; /* Keeps sidebar above content */
+  padding: 20px;
+}
+
+/* Ensure the sidebar remains sticky */
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Allow scrolling within the sidebar */
+  background-color: #f8f9fa;
+  border-right: 1px solid #dee2e6;
+  z-index: 100; /* Ensure it's above other content */
+}
+
+/* Ensure parent container allows scrolling */
+.main-container {
+  display: flex;
+  min-height: 100vh; /* Ensures full height */
+}
+
+.content {
+  flex-grow: 1; /* Allows main content to take up remaining space */
+}
+
+
+/* Latest Updates Section */
+.latest-updates {
+  margin-bottom: 20px;
+}
+
+.latest-updates h5 {
+  font-weight: bold;
+}
+
+.latest-updates ul {
+  padding-left: 20px;
+  list-style-type: none;
+}
+
+/* Project Titles in Latest Updates Section */
+.latest-updates .project-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 5px 0;
+}
+
+/* Projects Section Header */
+.projects-header {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Section Title */
+.section-title {
+  cursor: pointer;
+  padding: 10px 0;
+  font-weight: bold;
+  /* transition: color 0.3s ease; */
+}
+
+/* Section Title Hover and Color Change */
+.hover-orange:hover {
+  color: orange;
+  transition: color 0.3s ease;
+}
+
+/* Arrow Icon for Expandable Sections */
+.arrow {
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+
+.arrow.rotated {
+  transform: rotate(180deg);
+}
+
+/* Project List */
+.project-list {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.project-list.expanded {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Project Titles in Expandable Sections */
+.project-list .project-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  list-style-type: disc;
+  padding: 5px 0;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.card-img {
+  height: 100%;
+  border-radius: 4px 0 0 4px;
+  object-fit: cover;
+  border-radius: 4px 4px 0 0;
+}
+
+
+
+
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #ffffff; /* White background */
+}
+
+.quote-card {
+  position: relative;
+  background: #f3f3f3; /* Gray background */
+  padding: 3rem;
+  max-width: 600px;
+  text-align: center;
+  margin: 20px;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.quote-marks {
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.quote-marks.top {
+  top: -20px;
+  left: -10px;
+}
+
+.quote-marks.bottom {
+  bottom: -20px;
+  right: -10px;
+}
+
+.quote-text {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: #333;
+}
+
+.quote-author {
+  margin-top: 1rem;
+  color: #555;
+}
+
+pre {
+  background-color: #f6f8fa;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+code {
+  font-family: 'Courier New', monospace;
+  font-size: 1.1em;
+}
+
+.container pre,
+.container code {
+  white-space: pre-wrap;  /* Allows long lines to wrap */
+  word-wrap: break-word;
+}
+
+.container-blog {
+  max-width: 1000px;  /* Adjust width as needed */
+  margin: 0 auto;
+}
