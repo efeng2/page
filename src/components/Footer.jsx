@@ -2,7 +2,7 @@ import React from "react";
 
 export function Footer(props) {
     return (
-        <footer className="bg-body-tertiary text-dark py-3 mt-5">
+        <footer className="bg-body-tertiary text-dark py-3">
             <div className="container text-center">
                 <ul className="nav justify-content-center mb-3">
                     <li className="nav-item">

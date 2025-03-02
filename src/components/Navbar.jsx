@@ -1,16 +1,26 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom'
+import React, { useState } from "react";
+import { NavLink, useNavigate } from 'react-router-dom';
 
 export function Navbar(props) {
-    const { onSearch } = props
+    const { searchCallback } = props;
+    const [queryText, setQueryText] = useState('');
+    const navigate = useNavigate();
 
-    const [query, setQuery] = useState('');
+    const handleChange = (event) => {
+        setQueryText(event.target.value);
+    }
 
-    const handleSearch = (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault();
-        onSearch(query); // Send query to parent component
-    };
+        setQueryText('');
+        navigate({pathname: '/blog/' + queryText });
+        searchCallback(queryText);
+    }
 
+    const handleRadioChange = (event) => {
+        // event.preventDefault();
+        radioChangeCallback(event.target.value);
+    }
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary px-2">
             <div className="container-fluid">
@@ -45,8 +55,9 @@ export function Navbar(props) {
                             </NavLink>
                         </li>
                     </ul>
-                    <form className="d-flex" role="search">
-                        <input id="search" className="form-control me-2" type="search" placeholder="Search" aria-label="Search" value={query} onChange={(event) => setQuery(event.target.value)}/>
+
+                    <form className="d-flex" role="search" onSubmit={handleSubmit}>
+                        <input id="search" className="form-control me-2" type="search" value={queryText} aria-label="Search" onChange={handleChange} placeholder="Search" />
                         <button id="search-btn" className="btn btn-outline-dark" type="submit">Search</button>
                     </form>
                 </div>

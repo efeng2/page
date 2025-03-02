@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Carousel } from 'react-bootstrap';
+import Carousel from 'react-bootstrap/Carousel';
 
 export const AboutGrid = (props) => {
   const { latest_blogs_data, latest_projects_data } = props;
@@ -39,7 +39,7 @@ export const AboutGrid = (props) => {
           </div>
         </div>
 
-        <div className="col-md-6 mb-4">
+        <div className="col-md-6 mb-5">
           <div className="card shadow-sm rounded mb-4 skills-card">
             <div className="card-body">
               <h3 className="card-title text-center mb-4">Top Skills</h3>
@@ -56,7 +56,6 @@ export const AboutGrid = (props) => {
               </div>
             </div>
           </div>
-
 
           <div className="card shadow-sm rounded mb-4 achievements-card">
             <div className="card-body">

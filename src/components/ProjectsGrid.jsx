@@ -55,7 +55,7 @@ export function ProjectsGrid(props) {
 
     return (
         <>
-            <section id="projects" className="container">
+            <section id="projects" className="container mb-5">
                 <div className="d-flex justify-content-center">
                     <h2 className="my-4">Projects</h2>
                 </div>            
@@ -129,7 +129,7 @@ function ProjectCard(props) {
                             <h3 className="card-title">{title}</h3>
                             <p className="card-subtitle mb-2 text-muted">{date}</p>
                             <p className="card-text">{skills}</p>
-                            <p className="card-text d-none d-lg-inline-block">{description}</p>
+                            <p className="card-text text-muted">{description}</p>
                             {projectLinksArray}
                         </div>
                     </div>
