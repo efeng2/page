@@ -1,23 +1,5 @@
 [
   {
-    "title": "Personal Portfilio",
-    "date": "Feburary 2025",
-    "skills": "Skills: React",
-    "img": "/page/images/projects/personal_page.png",
-    "description": "(Current Page) This website showcases my professional journey, accomplishments, and skills. It is continuously updated to reflect the latest developments in my projects, blog posts, and professional experiences.",
-    "section": "web_dev",
-    "linksData": [
-      {
-        "website_name": "Github",
-        "url": "https://github.com/efeng2/page"
-      },
-      {
-        "website_name": "Website",
-        "url": "https://efeng2.github.io/page/"
-      }
-    ]
-  },
-  {
     "title": "K-in-a-row AI Game Agent",
     "date": "Feburary 2025",
     "skills": "Skills: python, minimax, alpha-beta pruning",
