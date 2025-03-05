@@ -72,7 +72,7 @@ export const AboutGrid = (props) => {
             <div className="card-body">
               <h3 className="card-title text-center">Hobbies</h3>
               <p className="text-center">
-                When I'm not coding, you can find me playing chess, experimenting with new art styles, or doing cardistry tricks!
+                When I'm not coding, you can find me playing chess, experimenting with new art styles, or doing cardistry!
               </p>
               <div className="row text-center">
                 <div className="col-4">
