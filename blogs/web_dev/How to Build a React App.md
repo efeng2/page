@@ -17,7 +17,7 @@ npm run dev
 ```
 
 # Basic React Setup
-In your index.js file, you will typically import the necessary React libraries and create a root element for rendering:
+In your main.jsx file, you will import the necessary React libraries and create a root element for rendering:
 
 ```jsx
 // src/main.jsx
@@ -36,7 +36,7 @@ root.render(
 ```
 
 ## Components - Create Your Own Tags
-React components are the building blocks of a React app. They allow you to define custom HTML tags. Each component should be capitalized.
+React components define custom HTML tags. Each component should be capitalized.
 
 Components are written in JSX
 
