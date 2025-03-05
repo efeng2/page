@@ -17,10 +17,6 @@ export function Navbar(props) {
         searchCallback(queryText);
     }
 
-    const handleRadioChange = (event) => {
-        // event.preventDefault();
-        radioChangeCallback(event.target.value);
-    }
     return (
         <nav className="navbar navbar-expand-lg bg-body-tertiary px-2">
             <div className="container-fluid">
@@ -44,10 +40,10 @@ export function Navbar(props) {
                                 className="nav-link hover-orange"
                                 to="/connect"
                                 onClick={(e) => {
-                                e.preventDefault(); // Prevent the default behavior (redirect)
+                                e.preventDefault();
                                 window.scrollTo({
-                                    top: document.documentElement.scrollHeight, // Scroll to the bottom
-                                    behavior: 'smooth' // Smooth scrolling
+                                    top: document.documentElement.scrollHeight,
+                                    behavior: 'smooth'
                                 });
                                 }}
                             >
