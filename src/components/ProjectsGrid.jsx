@@ -9,8 +9,6 @@ export function ProjectsGrid(props) {
     useEffect(() => {
         if (location.hash) {
           let elementId = decodeURIComponent(location.hash.substring(1));
-      
-          // Replace spaces with hyphens to make the ID valid
           elementId = elementId.replace(/\s+/g, '-');
       
           const targetElement = document.querySelector(`#${elementId}`);
@@ -119,12 +117,10 @@ function ProjectCard(props) {
             <div className="card mb-4 shadow-sm">
                 <div className="card-body">
                     <div className="row">
-                        {/* For small screens and medium or smaller devices, image on the left */}
                         <div className="col-4 col-md-12 d-flex justify-content-center align-items-center">
                             <img className="pb-3 mw-100" src={img} alt={title} />
                         </div>
 
-                        {/* For medium or larger screens, text on the right, otherwise it’s below */}
                         <div className="col-8 col-md-12 mt-md-0 mt-3">
                             <h3 className="card-title">{title}</h3>
                             <p className="card-subtitle mb-2 text-muted">{date}</p>

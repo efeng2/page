@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useParams } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link, useParams } from 'react-router-dom';
 
 // props: blogData
 export function BlogGrid(props) {

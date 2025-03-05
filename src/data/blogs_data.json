@@ -14,11 +14,11 @@
         "img": "/page/images/blogs/how_to_host_react_webpages_on_github_pages.png"
     },
     {
-        "title": "How to Build a React App in 2025",
+        "title": "How to Build a React App",
         "date": "2025-02-09",
-        "short_description": "In this guide, we explore the latest features and best practices for building React apps in 2025.",
+        "short_description": "To start a new React project, use the following command:",
         "section": "web_dev",
-        "img": "/page/images/blogs/how_to_build_a_react_app_in_2025.png"
+        "img": "/page/images/blogs/how_to_build_a_react_app.png"
     },
     {
         "title": "Beginner's Guide to How to Use Bootstrap (Utilities, Responsiveness)",

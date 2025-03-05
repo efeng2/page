@@ -49,34 +49,32 @@ function searchCards() {
 
     if (title.includes(query) || subtitle.includes(query) || text.includes(query)) {
       if (!firstMatch) {
-        firstMatch = card; // Store the first matching card
+        firstMatch = card;
       }
-      matchFound = true; // Set matchFound to true when a match is found
+      matchFound = true;
     }
   });
 
   // If a match is found, scroll to the first matching card
   if (firstMatch) {
     firstMatch.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    searchInput.placeholder = 'Search...'; // Reset the placeholder text if matches are found
+    searchInput.placeholder = 'Search...';
   } else {
-    searchInput.placeholder = 'No results found'; // Change placeholder text when no results are found
+    searchInput.placeholder = 'No results found';
   }
 
-  // Clear the search bar after search
   searchInput.value = '';
 }
 
-// Trigger search on Enter key press
 document.getElementById('search').addEventListener('keypress', function (event) {
   if (event.key === 'Enter') {
-    event.preventDefault(); // Prevent the form submission (page refresh)
+    event.preventDefault();
     searchCards();
   }
 });
 
 document.getElementById('search-btn').addEventListener('click', function (event) {
-  event.preventDefault(); // Prevent the default action (e.g., page refresh)
+  event.preventDefault();
   searchCards();
 });
 

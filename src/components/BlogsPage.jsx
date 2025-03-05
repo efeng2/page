@@ -22,7 +22,7 @@ function Sidebar(props) {
     const [expandedSection, setExpandedSection] = useState(null);
 
     const handleSectionClick = (section) => {
-        setExpandedSection((prev) => (prev === section ? null : section)); // Toggle section open/close without affecting others
+        setExpandedSection((prev) => (prev === section ? null : section));
     };
 
     const latestUpdates = blogsData.slice(0, 3);
@@ -60,7 +60,6 @@ function Sidebar(props) {
     return (
         <div className="sidebar d-none d-md-inline-block">
             <div className="m-lg-1 mt-lg-2">
-                {/* Latest Updates Section */}
                 <div className="latest-updates">
                     <h5>Latest Updates</h5>
                     <ul>
@@ -68,7 +67,6 @@ function Sidebar(props) {
                     </ul>
                 </div>
                 
-                {/* Latest Updates Section */}
                 <h4 className="projects-header">Blog Sections</h4>
                 {sectionsArray}
             </div>

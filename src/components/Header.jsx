@@ -1,11 +1,10 @@
 
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
+import { Link } from 'react-router-dom';
 
 export function Header() {
 
     useEffect(() => {
-        // Initialize particles.js after the component mounts
         if (window.particlesJS) {
           window.particlesJS('particles-js', {
             particles: {

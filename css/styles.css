@@ -150,18 +150,15 @@ header {
   z-index: 100; 
 }
 
-/* Ensure parent container allows scrolling */
 .main-container {
   display: flex;
-  min-height: 100vh; /* Ensures full height */
+  min-height: 100vh;
 }
 
 .content {
-  flex-grow: 1; /* Allows main content to take up remaining space */
+  flex-grow: 1;
 }
 
-
-/* Latest Updates Section */
 .latest-updates {
   margin-bottom: 20px;
 }
@@ -175,7 +172,6 @@ header {
   list-style-type: none;
 }
 
-/* Project Titles in Latest Updates Section */
 .latest-updates .project-title {
   white-space: nowrap;
   overflow: hidden;
@@ -183,13 +179,11 @@ header {
   padding: 5px 0;
 }
 
-/* Projects Section Header */
 .projects-header {
   font-weight: bold;
   margin-top: 20px;
 }
 
-/* Section Title */
 .section-title {
   cursor: pointer;
   padding: 10px 0;
@@ -197,7 +191,6 @@ header {
   /* transition: color 0.3s ease; */
 }
 
-/* Arrow Icon for Expandable Sections */
 .arrow {
   margin-right: 8px;
   transition: transform 0.3s ease;
@@ -207,7 +200,6 @@ header {
   transform: rotate(180deg);
 }
 
-/* Project List */
 .project-list {
   max-height: 0;
   opacity: 0;
@@ -220,7 +212,6 @@ header {
   opacity: 1;
 }
 
-/* Project Titles in Expandable Sections */
 .project-list .project-title {
   white-space: nowrap;
   overflow: hidden;
@@ -237,8 +228,8 @@ header {
 }
 
 .container-blog img {
-  max-width: 100%; /* Makes sure the image never exceeds the width of its container */
-  height: auto;    /* Maintains the aspect ratio */
+  max-width: 100%;
+  height: auto;
 }
 
 .quote-container {
@@ -246,12 +237,12 @@ header {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  background: #ffffff; /* White background */
+  background: #ffffff;
 }
 
 .quote-card {
   position: relative;
-  background: #f3f3f3; /* Gray background */
+  background: #f3f3f3;
   padding: 3rem;
   max-width: 600px;
   text-align: center;
@@ -300,16 +291,15 @@ code {
 
 .container pre,
 .container code {
-  white-space: pre-wrap;  /* Allows long lines to wrap */
+  white-space: pre-wrap;
   word-wrap: break-word;
 }
 
 .container-blog {
-  max-width: 1000px;  /* Adjust width as needed */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-/* Section Title Hover and Color Change */
 .hover-orange:hover {
   color: orange;
   transition: color 0.3s ease;
@@ -327,8 +317,6 @@ code {
   transform: translateY(-5px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
-
-
 
 @media (min-width: 1300px) {
   .container {

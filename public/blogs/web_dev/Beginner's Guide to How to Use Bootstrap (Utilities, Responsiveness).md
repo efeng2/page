@@ -24,7 +24,7 @@ Copy the first link and paste it into the `<head>` section of your HTML file:
 </head>
 ```
 
-### Understanding CDN
+### CDN
 A Content Delivery Network (CDN) hosts Bootstrap's styles, allowing quick and efficient downloading.
 
 To access the CSS file directly, paste the CDN link into your browser. For a more readable version, remove `.min` from the URL:
