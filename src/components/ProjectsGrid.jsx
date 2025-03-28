@@ -33,17 +33,31 @@ export function ProjectsGrid(props) {
     const location = useLocation();
 
     useEffect(() => {
-        console.log('in')
         if (location.hash) {
-          let elementId = decodeURIComponent(location.hash.substring(1));
-          elementId = elementId.replace(/\s+/g, '-');
-      
-          const targetElement = document.querySelector(`#${elementId}`);
-          if (targetElement) {
-            targetElement.scrollIntoView({ behavior: "smooth" });
-          }
+            // Decode the URI component first
+            let elementId = decodeURIComponent(location.hash.substring(1));
+            
+            if (!/[\u4e00-\u9fa5]/.test(elementId)) {
+                elementId = elementId.replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+            }
+            
+            let targetElement = document.getElementById(elementId);
+            
+            if (!targetElement) {
+                const allElements = document.querySelectorAll('[id]');
+                for (let el of allElements) {
+                    if (decodeURIComponent(el.id) === elementId) {
+                        targetElement = el;
+                        break;
+                    }
+                }
+            }
+            
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
         }
-      }, [location]);   
+    }, [location]);   
       
     const mlAlgorithmsProjects = projectsData.filter(project => project.section === 'ml_algorithms');
     const dataVisProjects = projectsData.filter(project => project.section === 'data_vis');
@@ -52,28 +66,28 @@ export function ProjectsGrid(props) {
 
     const mLAlorithmsArray = mlAlgorithmsProjects.map((projectData) => {
         const transformed = (
-            <ProjectCard key={projectData.title} projectData={projectData}/>
+            <ProjectCard key={projectData.title} projectData={projectData} language={language}/>
         )
         return transformed;
     });
 
     const dataVisArray = dataVisProjects.map((projectData) => {
         const transformed = (
-            <ProjectCard key={projectData.title} projectData={projectData}/>
+            <ProjectCard key={projectData.title} projectData={projectData} language={language}/>
         )
         return transformed;
     });
 
     const webDevArray = webDevProjects.map((projectData) => {
         const transformed = (
-            <ProjectCard key={projectData.title} projectData={projectData}/>
+            <ProjectCard key={projectData.title} projectData={projectData} language={language}/>
         )
         return transformed;
     });
 
     const csProgrammingArray = csProgrammingProjects.map((projectData) => {
         const transformed = (
-            <ProjectCard key={projectData.title} projectData={projectData}/>
+            <ProjectCard key={projectData.title} projectData={projectData} language={language}/>
         )
         return transformed;
     });
@@ -120,16 +134,20 @@ export function ProjectsGrid(props) {
                         </div>
                     </div>
                 </div> 
-
             </section>
         </>
     );
 }
 
 function ProjectCard(props) {
-    const { title, date, skills, description, img, linksData} = props.projectData;
+    const { title, date, skills, description, img, linksData } = props.projectData;
+    const { language } = props;
 
-    const titleID = title.replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+    // For Chinese titles, use the raw title as ID
+    // For English, use the cleaned version
+    const titleID = /[\u4e00-\u9fa5]/.test(title) 
+        ? encodeURIComponent(title) 
+        : title.replace(/\s+/g, '-').replace(/[^\w-]/g, '');
     
     const projectLinksArray = linksData.map((linkData) => {
         const transformed = (
@@ -137,7 +155,6 @@ function ProjectCard(props) {
         )
         return transformed;
     });
-
 
     return (
         <div className="col-md-6 col-lg-4 d-flex" id={titleID}>
@@ -159,8 +176,6 @@ function ProjectCard(props) {
                 </div>
             </div>
         </div>
-
-    
     );
 }
 
@@ -168,6 +183,6 @@ function ProjectLink(props) {
     const { website_name, url } = props.linkData;
 
     return(
-        <a href={url} className="card-link" target="_blank">{website_name}</a>
+        <a href={url} className="card-link" target="_blank" rel="noopener noreferrer">{website_name}</a>
     )
 }
