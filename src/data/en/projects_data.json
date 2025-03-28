@@ -1,19 +1,5 @@
 [
   {
-    "title": "K-in-a-row AI Game Agent",
-    "date": "Feburary 2025",
-    "skills": "Skills: python, minimax, alpha-beta pruning",
-    "img": "/page/images/projects/game_agent.png",
-    "description": "An AI game agent that uses minimax and alpha-beta pruning to serach what the next best move of the game is.",
-    "section": "ml_algorithms",
-    "linksData": [
-      {
-        "website_name": "Github",
-        "url": "https://github.com/efeng2/cse415-agent"
-      }
-    ]
-  },
-  {
     "title": "UW Band Search Web App",
     "date": "2025年3月",
     "skills": "Skills: Firebase Realtime Database、React、Bootstrap、html、css、javascript",
@@ -28,6 +14,20 @@
       {
         "website_name": "GitHub",
         "url": "https://github.com/info340c-wi25/project-CA3"
+      }
+    ]
+  },
+  {
+    "title": "K-in-a-row AI Game Agent",
+    "date": "Feburary 2025",
+    "skills": "Skills: python, minimax, alpha-beta pruning",
+    "img": "/page/images/projects/game_agent.png",
+    "description": "An AI game agent that uses minimax and alpha-beta pruning to serach what the next best move of the game is.",
+    "section": "ml_algorithms",
+    "linksData": [
+      {
+        "website_name": "Github",
+        "url": "https://github.com/efeng2/cse415-agent"
       }
     ]
   },

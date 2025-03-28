@@ -1,19 +1,5 @@
 [
   {
-    "title": "连珠棋AI对战代理",
-    "date": "2025年2月",
-    "skills": "涉及技术：Python、Minimax算法、Alpha-Beta剪枝",
-    "img": "/page/images/projects/game_agent.png",
-    "description": "运用Minimax算法和Alpha-Beta剪枝技术开发的AI代理，可智能计算游戏最优下一步",
-    "section": "ml_algorithms",
-    "linksData": [
-      {
-        "website_name": "GitHub",
-        "url": "https://github.com/efeng2/cse415-agent"
-      }
-    ]
-  },
-  {
     "title": "学校音乐社团搜索网站",
     "date": "2025年3月",
     "skills": "涉及技术：Firebase 实时数据库、React、Bootstrap、html、css、javascript",
@@ -28,6 +14,20 @@
       {
         "website_name": "GitHub",
         "url": "https://github.com/info340c-wi25/project-CA3"
+      }
+    ]
+  },
+  {
+    "title": "连珠棋AI对战代理",
+    "date": "2025年2月",
+    "skills": "涉及技术：Python、Minimax算法、Alpha-Beta剪枝",
+    "img": "/page/images/projects/game_agent.png",
+    "description": "运用Minimax算法和Alpha-Beta剪枝技术开发的AI代理，可智能计算游戏最优下一步",
+    "section": "ml_algorithms",
+    "linksData": [
+      {
+        "website_name": "GitHub",
+        "url": "https://github.com/efeng2/cse415-agent"
       }
     ]
   },
