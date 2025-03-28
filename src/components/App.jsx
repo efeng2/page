@@ -34,15 +34,13 @@ function App() {
                     <Route path="blog" element={<BlogsPage blogsDataEN={BLOGS_DATA_EN} blogsDataCN={BLOGS_DATA_CN}/>}>
                         <Route path=":section_name/:sub_section/:blog_title" element={<BlogDetails />} />
                         <Route path=":section_name/:sub_section" element={<BlogGrid queryText={queryText} blogsDataEN={BLOGS_DATA_EN} blogsDataCN={BLOGS_DATA_CN} searchCallback={handleSearch} />} />
-                        
                         <Route path="search/:searchParams" element={<BlogGrid queryText={queryText} blogsDataEN={BLOGS_DATA_EN} blogsDataCN={BLOGS_DATA_CN} searchCallback={handleSearch}/>}/>
-                        
                         <Route index element={<BlogGrid blogsDataEN={BLOGS_DATA_EN} blogsDataCN={BLOGS_DATA_CN}/>} />
                     </Route>
                     <Route path="connect" element={<Connect />} />
-                    <Route path="*" element={<Navigate to="/"/>} />
+                    {/* <Route path="*" element={<Navigate to="/"/>} /> */}
                 </Route>
-                <Route path="*" element={<Navigate to="/en"/>} />
+                {/* <Route path="*" element={<Navigate to="/en"/>} /> */}
             </Routes>
             <Footer />
         </>

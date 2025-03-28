@@ -47,12 +47,12 @@ export function BlogsPage(props) {
 
     const sections_CN = {
         "人工智能与机器学习": [
-          "Bayes Nets",
-          "Game Agents",
-          "Machine Learning",
-          "Markov Models",
-          "Natrual Language Processing",
-          "Search Algorithms"
+          "大语言模型",
+          "搜索函数",
+          "机器学习算法",
+          "游戏智能体",
+          "贝叶斯网络",
+          "马尔可夫模型"
         ],
         "学习反思": [
           "人工智能"
@@ -61,13 +61,13 @@ export function BlogsPage(props) {
           "数学建模"
         ],
         "数据处理与编程": [
-          "Parallel Computing",
+          "并行计算",
           "数据科学"
         ],
         "网站制作": [
-          "Basics",
-          "Database",
-          "React"
+          "React",
+          "基础",
+          "数据库"
         ]
     }
 

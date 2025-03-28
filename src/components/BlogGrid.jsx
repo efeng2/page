@@ -43,7 +43,7 @@ export function BlogGrid(props) {
     if (sub_section != undefined) {
         filteredBlogsData = blogsData.filter(blog => blog.sub_section === sub_section);
         if (language == 'cn') {
-            searchString = '"' + sub_section + '" 的搜索结果：';
+            searchString = '"' + sub_section + '" 分区的博客';
         } else {
             searchString = "Blogs in " + sub_section;
         }
@@ -61,7 +61,8 @@ export function BlogGrid(props) {
             <BlogCard 
                 key={blogData.title} 
                 blogData={blogData}
-                searchTerm={searchParams}  // Pass the search term to BlogCard
+                searchTerm={searchParams}
+                language={language}
             />
         )
         return transformed;
@@ -88,15 +89,14 @@ export function BlogGrid(props) {
 
 function BlogCard(props) {
     const { title, date, img, alt, short_description, section, sub_section } = props.blogData;
-    const { searchTerm } = props;
+    const { searchTerm, language } = props;
     const defaultImage = "/page/images/default.png";
     const [imageSrc, setImageSrc] = useState(img);
     
-    // Function to highlight search terms in text
+    // highlight
     const highlightSearchTerms = (text, term) => {
         if (!term || !text) return text;
         
-        // Escape special regex characters in the search term
         const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(`(${escapedTerm})`, 'gi');
         
@@ -132,7 +132,7 @@ function BlogCard(props) {
                 </div>
                 <div className="col-8 col-lg-9">
                     <div className="card-body">
-                        <Link to={`${section}/${sub_section}/${title}`} className="text-decoration-none">
+                    <Link to={`/${language}/blog/${section}/${sub_section}/${title}`} className="text-decoration-none">
                             <h2 className="card-title">
                                 {highlightSearchTerms(title, searchTerm)}
                             </h2>
