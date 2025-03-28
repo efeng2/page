@@ -15,7 +15,7 @@ export function Navbar(props) {
     const handleSubmit = (event) => {
         event.preventDefault();
         setQueryText('');
-        navigate({pathname: '/' + language + '/blog/' + queryText });
+        navigate({pathname: '/' + language + '/blog/search/' + queryText });
         searchCallback(queryText);
     }
 
