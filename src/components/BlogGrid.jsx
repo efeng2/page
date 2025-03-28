@@ -47,7 +47,6 @@ export function BlogGrid(props) {
         } else {
             searchString = "Blogs in " + sub_section;
         }
-
     }
 
     // alert
@@ -59,7 +58,11 @@ export function BlogGrid(props) {
 
     const blogCardArray = filteredBlogsData.map((blogData) => {
         const transformed = (
-            <BlogCard key={blogData.title} blogData={blogData}/>
+            <BlogCard 
+                key={blogData.title} 
+                blogData={blogData}
+                searchTerm={searchParams}  // Pass the search term to BlogCard
+            />
         )
         return transformed;
     });
@@ -82,10 +85,39 @@ export function BlogGrid(props) {
         </>
     );
 }
+
 function BlogCard(props) {
     const { title, date, img, alt, short_description, section, sub_section } = props.blogData;
+    const { searchTerm } = props;
     const defaultImage = "/page/images/default.png";
     const [imageSrc, setImageSrc] = useState(img);
+    
+    // Function to highlight search terms in text
+    const highlightSearchTerms = (text, term) => {
+        if (!term || !text) return text;
+        
+        // Escape special regex characters in the search term
+        const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`(${escapedTerm})`, 'gi');
+        
+        return text.split(regex).map((part, index) => {
+            if (part.toLowerCase() === term.toLowerCase()) {
+                return (
+                    <span 
+                        key={index} 
+                        style={{
+                            backgroundColor: '#ffeb3b',
+                            padding: '0 2px',
+                            borderRadius: '3px'
+                        }}
+                    >
+                        {part}
+                    </span>
+                );
+            }
+            return part;
+        });
+    };
     
     return (
         <div className="col-12 d-flex card m-2">
@@ -101,7 +133,9 @@ function BlogCard(props) {
                 <div className="col-8 col-lg-9">
                     <div className="card-body">
                         <Link to={`${section}/${sub_section}/${title}`} className="text-decoration-none">
-                            <h2 className="card-title">{title}</h2>
+                            <h2 className="card-title">
+                                {highlightSearchTerms(title, searchTerm)}
+                            </h2>
                         </Link>
                         <div className="d-flex flex-wrap">
                             <p className="text-muted card-subtitle">{date}</p>
