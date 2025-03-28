@@ -10,15 +10,13 @@ import { BlogDetails } from './BlogDetails.jsx';
 import { BlogGrid } from './BlogGrid.jsx';
 import { ProjectsGrid } from './ProjectsGrid.jsx';
 import { Footer } from './Footer.jsx';
-// import { SearchPage } from './SearchPage.jsx';
 
-import PROJECTS_DATA from '../data/projects_data.json';
-import BLOGS_DATA from '../data/blogs_data.json';
+import PROJECTS_DATA_EN from '../data/en/projects_data.json';
+import PROJECTS_DATA_CN from '../data/cn/projects_data.json';
+import BLOGS_DATA_EN from '../data/en/blogs_data.json';
+import BLOGS_DATA_CN from '../data/cn/blogs_data.json';
 
 function App() {
-    const latest_blogs_data = BLOGS_DATA.slice(0, 3);
-    const latest_projects_data = PROJECTS_DATA.slice(0, 3);
-
     const [queryText, setQueryText] = useState([]);
 
     const handleSearch = (queryText) => {
@@ -27,19 +25,24 @@ function App() {
 
     return (
         <>
-            <Navbar searchCallback={handleSearch}/>
             <Routes>
-                <Route path="/" element={<AboutPage latest_blogs_data={latest_blogs_data} latest_projects_data={latest_projects_data} />} />
-                <Route path="projects" element={<ProjectsPage projectsData={PROJECTS_DATA} />}>
-                    <Route index element={<ProjectsGrid  projectsData={PROJECTS_DATA}/>} />
+                <Route path=':language' element={<Navbar searchCallback={handleSearch} />}>
+                    <Route index element={<AboutPage projectsDataEN={PROJECTS_DATA_EN} projectsDataCN={PROJECTS_DATA_CN} blogsDataEN={BLOGS_DATA_EN} blogsDataCN={BLOGS_DATA_CN}/>} />
+                    <Route path="projects" element={<ProjectsPage projectsDataEN={PROJECTS_DATA_EN} projectsDataCN={PROJECTS_DATA_CN} />}>
+                        <Route index element={<ProjectsGrid projectsDataEN={PROJECTS_DATA_EN} projectsDataCN={PROJECTS_DATA_CN}/>} />
+                    </Route>
+                    <Route path="blog" element={<BlogsPage blogsDataEN={BLOGS_DATA_EN} blogsDataCN={BLOGS_DATA_CN}/>}>
+                        <Route path=":section_name/:sub_section/:blog_title" element={<BlogDetails />} />
+                        <Route path=":section_name/:sub_section" element={<BlogGrid queryText={queryText} blogsDataEN={BLOGS_DATA_EN} blogsDataCN={BLOGS_DATA_CN} searchCallback={handleSearch} />} />
+                        
+                        <Route path="search/:searchParams" element={<BlogGrid queryText={queryText} blogsDataEN={BLOGS_DATA_EN} blogsDataCN={BLOGS_DATA_CN} searchCallback={handleSearch}/>}/>
+                        
+                        <Route index element={<BlogGrid blogsDataEN={BLOGS_DATA_EN} blogsDataCN={BLOGS_DATA_CN}/>} />
+                    </Route>
+                    <Route path="connect" element={<Connect />} />
+                    <Route path="*" element={<Navigate to="/"/>} />
                 </Route>
-                <Route path="blog" element={<BlogsPage blogsData={BLOGS_DATA}/>}>
-                    <Route path=":section_name/:blog_title" element={<BlogDetails />} />
-                    <Route path=":searchParams?" element={<BlogGrid queryText={queryText} blogsData={BLOGS_DATA} searchCallback={handleSearch}/>}/>
-                    <Route index element={<BlogGrid blogsData={BLOGS_DATA}/>} />
-                </Route>
-                <Route path="connect" element={<Connect />} />
-                <Route path="*" element={<Navigate to="/"/>} />
+                <Route path="*" element={<Navigate to="/en"/>} />
             </Routes>
             <Footer />
         </>

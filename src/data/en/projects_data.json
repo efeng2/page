@@ -1,0 +1,252 @@
+[
+  {
+    "title": "K-in-a-row AI Game Agent",
+    "date": "Feburary 2025",
+    "skills": "Skills: python, minimax, alpha-beta pruning",
+    "img": "/page/images/projects/game_agent.png",
+    "description": "An AI game agent that uses minimax and alpha-beta pruning to serach what the next best move of the game is.",
+    "section": "ml_algorithms",
+    "linksData": [
+      {
+        "website_name": "Github",
+        "url": "https://github.com/efeng2/cse415-agent"
+      }
+    ]
+  },
+  {
+    "title": "UW Band Search Web App",
+    "date": "2025年3月",
+    "skills": "Skills: Firebase Realtime Database、React、Bootstrap、html、css、javascript",
+    "img": "/page/images/projects/band_search.png",
+    "description": "User Authentication and Login, Update realtime database according to user interaction.",
+    "section": "web_dev",
+    "linksData": [
+      {
+        "website_name": "Website",
+        "url": "https://band-search-92e0c.web.app/"
+      },
+      {
+        "website_name": "GitHub",
+        "url": "https://github.com/info340c-wi25/project-CA3"
+      }
+    ]
+  },
+  {
+    "title": "Personal Webpage",
+    "date": "2025年2月",
+    "skills": "Skills: React、Bootstrap、html、css、js",
+    "img": "/page/images/projects/personal_page.png",
+    "description": "Personal Webpage",
+    "section": "web_dev",
+    "linksData": [
+      {
+        "website_name": "Website (Is the current Site)",
+        "url": "https://efeng2.github.io/page/cn"
+      },
+      {
+        "website_name": "GitHub",
+        "url": "https://github.com/efeng2/page"
+      }
+    ]
+  },
+  {
+    "title": "Population Aging Transition Model",
+    "date": "October 2024",
+    "skills": "Skills: mathematical modeling, python",
+    "img": "/page/images/projects/population.png",
+    "description": "A system of differential equations designed to simulate demographic shifts across three age groups, addressing workforce sustainability challenges.",
+    "section": "ml_algorithms",
+    "linksData": [
+      {
+        "website_name": "Github",
+        "url": "https://github.com/Youni2017/Amath383-FinalProject"
+      },
+      {
+        "website_name": "Paper",
+        "url": "https://drive.google.com/file/d/1UKGSEnUZxb0gSoepEW5iqXKGIotBKzG_/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "title": "Eatvolution",
+    "date": "October 2024, Dubhacks Contest Entry",
+    "skills": "Skills: perplexity AI, react, typescript, mysql, node.js, html, css, javascript",
+    "img": "/page/images/projects/evolution.jpg",
+    "description": "A system of differential equations designed to simulate demographic shifts across three age groups, addressing workforce sustainability challenges.",
+    "section": "cs_programming",
+    "linksData": [
+      {
+        "website_name": "Devpost",
+        "url": "https://devpost.com/software/temp-title-ayo482?ref_content=user-portfolio&ref_feature=in_progress"
+      },
+      {
+        "website_name": "Github",
+        "url": "https://github.com/SamGanYX/Dubhacks2024"
+      }
+    ]
+  },
+  {
+    "title": "Status and Locations of Shelter Dogs",
+    "date": "March 2024",
+    "skills": "Skills: Observable, Vegalite, D3",
+    "img": "/page/images/projects/dogs.gif",
+    "description": "A visualization project to track shelter dogs' locations and statuses, aiming to promote adoption over purchasing pets.",
+    "section": "data_vis",
+    "linksData": [
+      {
+        "website_name": "Website",
+        "url": "https://observablehq.com/d/f8fd2ad05f7aea78"
+      }
+    ]
+  },
+  {
+    "title": "Exposure of PM 2.5 Concentration, Cardiovascular Disease, and Proximity to Hospitals",
+    "date": "December 2023",
+    "skills": "Skills: QGIS",
+    "img": "/page/images/projects/qgis.png",
+    "description": "A geospatial analysis exploring the correlation between PM 2.5 exposure, cardiovascular disease, and hospital accessibility in Washington State.",
+    "section": "data_vis",
+    "linksData": [
+      {
+        "website_name": "Report",
+        "url": "https://drive.google.com/file/d/14gnFiz8M31wrMFbaaBIQj8_IZrdUyu-i/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "title": "Estore - Website",
+    "date": "June 2023",
+    "skills": "Skills: node.js, mySQL, html, css, javascript",
+    "img": "/page/images/projects/eshop.gif",
+    "description": "A mock online clothing store developed with a full-stack approach, implementing front-end and back-end technologies.",
+    "section": "web_dev",
+    "linksData": [
+      {
+        "website_name": "Gitlab",
+        "url": "https://gitlab.cs.washington.edu/cse154-23sp-students/fp-partner-efeng2-evanc9"
+      }
+    ]
+  },
+  {
+    "title": "Factors that Contribute to the Changes in Global Happiness and the Impact of the Pandemic",
+    "date": "June 2022",
+    "skills": "Skills: Python, Sklearn",
+    "img": "/page/images/projects/global_happiness.png",
+    "description": "A machine learning-based analysis exploring factors influencing global happiness scores, including the impact of the pandemic.",
+    "section": "ml_algorithms",
+    "linksData": [
+      {
+        "website_name": "Github",
+        "url": "https://github.com/efeng2/global_happiness_report"
+      },
+      {
+        "website_name": "Report",
+        "url": "https://drive.google.com/file/d/1zudoG_DB3pH_kipcv-Zjo_fKStrCiLER/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "title": "Popularity of News Articles and Their Sources",
+    "date": "August 2022",
+    "skills": "Skills: R Shiny, R, Python, ggplot2, dplyr",
+    "img": "/page/images/projects/rshiny.png",
+    "description": "An analysis platform investigating the preferred news sources of the general public using R Shiny and data visualization techniques.",
+    "section": "data_vis",
+    "linksData": [
+      {
+        "website_name": "Github",
+        "url": "https://github.com/efeng2/popularity-of-news-articles"
+      },
+      {
+        "website_name": "Website",
+        "url": "https://trininol.shinyapps.io/info201/"
+      }
+    ]
+  },
+  {
+    "title": "Glide",
+    "date": "2022 Dubhacks Contest Entry",
+    "skills": "Skills: T-Mobile's DevEdge loT Developer Kit",
+    "img": "/page/images/projects/glide.gif",
+    "description": "Designed an innovative solution to make extreme sports like skydiving accessible and safe using T-Mobile's DevEdge IoT Developer Kit. The project integrates IoT technologies to simulate the experience for participants.",
+    "section": "cs_programming",
+    "linksData": [
+      {
+        "website_name": "Devpost",
+        "url": "https://devpost.com/software/glide-blutqa"
+      },
+      {
+        "website_name": "Demo",
+        "url": "https://tzuy32.wixsite.com/glide"
+      }
+    ]
+  },
+  {
+    "title": "Propinquity",
+    "date": "June 2022",
+    "skills": "Skills: Information System Design",
+    "img": "/page/images/projects/propinquity.png",
+    "description": "A social app designed to integrate opportunities for social connections into everyday tasks, fostering relationships through proximity-based interactions.",
+    "section": "cs_programming",
+    "linksData": [
+      {
+        "website_name": "Report",
+        "url": "https://drive.google.com/file/d/1xb-2fAdsDKa3e3OKV9c_HLP0sHZlh9Ao/view?usp=sharing"
+      }
+    ]
+  },
+  {
+    "title": "Eco",
+    "date": "2022 Husky Hackathon Contest Entry",
+    "skills": "Skills: Information System Design, Figma",
+    "img": "/page/images/projects/eco.png",
+    "section": "cs_programming",
+    "description": "Second Place - A Green Logistics project on how construction businesses can contribute to a carbon neutral environment by creating an platform for them to mangage their resource allocations.",
+    "linksData": [
+      {
+        "website_name": "Website",
+        "url": "https://www.huskyhackathon.com/2022-hackathon"
+      },
+      {
+        "website_name": "Demo",
+        "url": "https://www.figma.com/proto/6hth39GB7P4RVUOpUs5xM0/Prototype?node-id=0-1&t=1TrsxozYBFyZRmrw-1"
+      }
+    ]
+  },
+  {
+    "title": "UW Mind Hub",
+    "date": "2021 Dubhacks Contest Entry",
+    "skills": "Skills: Figma",
+    "img": "/page/images/projects/mindhub.png",
+    "section": "cs_programming",
+    "description": "2021 Dubhacks Contest Entry - Cybersource Visa Sponsership Award: a prototype app aimed to increase student wellness and connectivity.",
+    "linksData": [
+      {
+        "website_name": "Devpost",
+        "url": "https://devpost.com/software/uw-mind-hub?ref_content=user-portfolio&ref_feature=in_progress"
+      },
+      {
+        "website_name": "Demo",
+        "url": "https://www.figma.com/proto/vR6wCi2USBj15cm4vyxKP1/Product?node-id=116-113&scaling=scale-down&page-id=0%3A1&starting-point-node-id=116%3A113&show-proto-sidebar=1"
+      },
+      {
+        "website_name": "Video",
+        "url": "https://vimeo.com/638409461"
+      }
+    ]
+  },
+  {
+    "title": "ASL Alphabet Recognition Project",
+    "date": "August 2020",
+    "skills": "Skills: ML - SVC, XGBoost, ANNs",
+    "img": "/page/images/projects/asl.png",
+    "section": "ml_algorithms",
+    "description": "Developed a project to translate American Sign Language (ASL) for individuals with hearing difficulties using Leap Motion for gesture recognition.",
+    "linksData": [
+      {
+        "website_name": "Paper",
+        "url": "https://drive.google.com/drive/folders/1PPO6sh9tEDkU3Z2uvrIZhmFJ614v4vXR?dmr=1&ec=wgc-drive-globalnav-goto"
+      }
+    ]
+  }  
+]

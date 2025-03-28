@@ -1,0 +1,306 @@
+[
+    {
+        "title": "动力系统与混沌学习笔记",
+        "date": "2025-03-14",
+        "short_description": "**动力系统**是描述状态变量随时间演化规律的一组规则。",
+        "section": "应用数学",
+        "sub_section": "数学建模",
+        "img": "/page/blogs/cn/应用数学/数学建模/image-19.png"
+    },
+    {
+        "title": "阿西莫夫机器人三定律与AI伦理",
+        "date": "2025-03-11",
+        "short_description": "机器人不得伤害人类个体，或因不作为致使人类个体受到伤害。",
+        "section": "学习反思",
+        "sub_section": "人工智能",
+        "img": "/page/blogs/cn/学习反思/人工智能/https://www.researchgate.net/publication/369477508/figure/fig1/AS:11431281150203946@1681870771676/Isaac-Asimovs-three-laws-of-robotics.png"
+    },
+    {
+        "title": "ACM算法治理原则",
+        "date": "2025-03-10",
+        "short_description": "- **1. 意识原则**",
+        "section": "学习反思",
+        "sub_section": "人工智能",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "深度学习与大语言模型中的数学原理",
+        "date": "2025-03-09",
+        "short_description": "",
+        "section": "人工智能与机器学习",
+        "sub_section": "大语言模型",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "感知机 - 神经网络（Preceptrons）",
+        "date": "2025-03-05",
+        "short_description": "",
+        "section": "人工智能与机器学习",
+        "sub_section": "机器学习算法",
+        "img": "/page/blogs/cn/人工智能与机器学习/机器学习算法/image.png"
+    },
+    {
+        "title": "MDP中的Q学习算法",
+        "date": "2025-03-03",
+        "short_description": "Q学习是一种通过Q表(Q-table)来学习状态-动作价值的强化学习方法。智能体(agent)通过不断尝试不同动作，最终学习到在特定状态下采取哪些动作能获得更大奖励。",
+        "section": "人工智能与机器学习",
+        "sub_section": "马尔可夫模型",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "马尔可夫决策过程",
+        "date": "2025-03-03",
+        "short_description": "",
+        "section": "人工智能与机器学习",
+        "sub_section": "马尔可夫模型",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "隐马尔可夫模型与维特比算法",
+        "date": "2025-03-01",
+        "short_description": "",
+        "section": "人工智能与机器学习",
+        "sub_section": "马尔可夫模型",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "D-分离准则 (D-Separation)",
+        "date": "2025-02-25",
+        "short_description": "",
+        "section": "人工智能与机器学习",
+        "sub_section": "贝叶斯网络",
+        "img": "/page/blogs/cn/人工智能与机器学习/贝叶斯网络/image.png"
+    },
+    {
+        "title": "贝叶斯网络（事件独立性与联合概率分布）",
+        "date": "2025-02-25",
+        "short_description": "",
+        "section": "人工智能与机器学习",
+        "sub_section": "贝叶斯网络",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "马尔可夫决策过程中的值迭代与贝尔曼方程",
+        "date": "2025-02-25",
+        "short_description": "",
+        "section": "人工智能与机器学习",
+        "sub_section": "马尔可夫模型",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "AJAX Requests (Async Fetch)",
+        "date": "2025-02-20",
+        "short_description": "",
+        "section": "网站制作",
+        "sub_section": "React",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "React Effect Hooks (How to let code only run once when page is loaded)",
+        "date": "2025-02-20",
+        "short_description": "",
+        "section": "网站制作",
+        "sub_section": "React",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Firebase Realtime Database",
+        "date": "2025-02-20",
+        "short_description": "",
+        "section": "网站制作",
+        "sub_section": "数据库",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "How to Build a React App",
+        "date": "2025-02-09",
+        "short_description": "Navigate to the project folder:",
+        "section": "网站制作",
+        "sub_section": "React",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "对抗性搜索：博弈智能体中的Minimax与Alpha-Beta剪枝",
+        "date": "2025-02-07",
+        "short_description": "",
+        "section": "人工智能与机器学习",
+        "sub_section": "游戏智能体",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Javascript DOM Manipulation",
+        "date": "2025-02-03",
+        "short_description": "",
+        "section": "网站制作",
+        "sub_section": "基础",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Beginner's Guide to How to Use Bootstrap (Utilities, Responsiveness)",
+        "date": "2025-01-20",
+        "short_description": "CSS frameworks simplify styling by providing predefined CSS rules that can be easily integrated into your website by modifying its HTML structure. Bootstrap, created by Twitter in 2011, is the oldest and most popular CSS framework.",
+        "section": "网站制作",
+        "sub_section": "基础",
+        "img": "/page/blogs/cn/网站制作/基础/beginner's_guide_to_how_to_use_bootstrap_(utilities,_responsiveness"
+    },
+    {
+        "title": "启发式搜索与A星算法 (Heuristics and A-Star Search)",
+        "date": "2025-01-13",
+        "short_description": "状态空间表示解决问题时可能遇到的所有可能状态，定义了搜索过程中系统可以采取的全部配置集合。",
+        "section": "人工智能与机器学习",
+        "sub_section": "搜索函数",
+        "img": "/page/blogs/cn/人工智能与机器学习/搜索函数/<Heuristics and A-Star Search.png>"
+    },
+    {
+        "title": "Types of AI Deployment",
+        "date": "2025-01-13",
+        "short_description": "",
+        "section": "学习反思",
+        "sub_section": "人工智能",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "numPY and Pandas - Python Libraries for Data Science",
+        "date": "2025-01-13",
+        "short_description": "",
+        "section": "数据处理与编程",
+        "sub_section": "数据科学",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "N层神经网络 (N-Layer Neural Network)",
+        "date": "2025-01-01",
+        "short_description": "**温度参数 (Temperature)**：",
+        "section": "人工智能与机器学习",
+        "sub_section": "大语言模型",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "（Hugging Face）如何训练和评估 Transformer 模型（代码 + 实践）",
+        "date": "2025-01-01",
+        "short_description": "",
+        "section": "人工智能与机器学习",
+        "sub_section": "大语言模型",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "React Router for Single Page Apps",
+        "date": "2025-01-01",
+        "short_description": "npm install react-router-dom",
+        "section": "网站制作",
+        "sub_section": "React",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "如何在Github Pages上部署React网页",
+        "date": "2025-01-01",
+        "short_description": "",
+        "section": "网站制作",
+        "sub_section": "React",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "HTML VS Code Shortcut",
+        "date": "2025-01-01",
+        "short_description": "! + enter",
+        "section": "网站制作",
+        "sub_section": "基础",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "如何使用 Github Pages 免费发布，部署网站",
+        "date": "2025-01-01",
+        "short_description": "",
+        "section": "网站制作",
+        "sub_section": "基础",
+        "img": "/page/blogs/cn/网站制作/基础/https://i-blog.csdnimg.cn/direct/dd0a6c08fafa40a69e86a79118dc8362.png"
+    },
+    {
+        "title": "数学建模 (Mathematical Modeling)",
+        "date": "2024-12-20",
+        "short_description": "- 令dy/dx=0，求解y值",
+        "section": "应用数学",
+        "sub_section": "数学建模",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "ODE 速通",
+        "date": "2024-11-20",
+        "short_description": "",
+        "section": "应用数学",
+        "sub_section": "数学建模",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "导数速通指南",
+        "date": "2024-11-17",
+        "short_description": "函数相对于变量的变化率（例如速度）",
+        "section": "应用数学",
+        "sub_section": "数学建模",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "积分速通",
+        "date": "2024-11-17",
+        "short_description": "曲线下的面积。",
+        "section": "应用数学",
+        "sub_section": "数学建模",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "并行计算与CUDA (Parallel Computing and CUDA)",
+        "date": "2024-10-11",
+        "short_description": "",
+        "section": "数据处理与编程",
+        "sub_section": "并行计算",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "(Hugging Face) Transformers 的 Tokenizers - 词语分割器 + 实践",
+        "date": "2024-07-27",
+        "short_description": "**Tokenization**，即对句子变成token进行处理，是自然语言处理（NLP）中最基本且首要的步骤，指将输入文本分割为可处理的token单元。",
+        "section": "人工智能与机器学习",
+        "sub_section": "大语言模型",
+        "img": "/page/blogs/cn/人工智能与机器学习/大语言模型/https://i-blog.csdnimg.cn/direct/92d61edabd3f425cb6fcff5a92234cd8.png"
+    },
+    {
+        "title": "Hugging Face基础：简单讲解Transformer模型和结构",
+        "date": "2024-07-22",
+        "short_description": "1. Transformer 是什么",
+        "section": "人工智能与机器学习",
+        "sub_section": "大语言模型",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "回归分析与优化方法（Regression）",
+        "date": "2023-10-11",
+        "short_description": "",
+        "section": "人工智能与机器学习",
+        "sub_section": "机器学习算法",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "机器学习分类器算法",
+        "date": "2023-10-11",
+        "short_description": "- 通过查询路径到达叶节点",
+        "section": "人工智能与机器学习",
+        "sub_section": "机器学习算法",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "深度学习",
+        "date": "2023-10-11",
+        "short_description": "- 由多个感知机构成，容易过拟合",
+        "section": "人工智能与机器学习",
+        "sub_section": "机器学习算法",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "聚类分析",
+        "date": "2023-10-11",
+        "short_description": "- 数据无标签",
+        "section": "人工智能与机器学习",
+        "sub_section": "机器学习算法",
+        "img": "/page/images/default.png"
+    }
+]

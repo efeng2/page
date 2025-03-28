@@ -3,28 +3,54 @@ import { Link, useParams } from 'react-router-dom';
 
 // props: blogData
 export function BlogGrid(props) {
-    const { blogsData } = props
+    const { blogsDataEN, blogsDataCN } = props;
 
+    let blogsData = blogsDataEN;
     let searchParams = useParams().searchParams;
     let alertClass = 'd-none';
+    let searchString = 'Search Results for: ' + searchParams;
+    let alertString = "Nothing found for " + searchParams;
+    
+    const { language, sub_section } = useParams();
+    
+    if (language == 'cn') {
+        blogsData = blogsDataCN;
+        searchString = '"' + searchParams + '" 的搜索结果：';
+        alertString = '没有找到 "' + searchParams + '" 的搜索结果：';
+    }
 
+    let filteredBlogsData= blogsData;
+
+    // if search
     if (searchParams == undefined) {
         searchParams = '';
-    }
-
-    let searchString = 'Search Results for: ' + searchParams
-    if (searchParams == ''){
-        searchString = 'Blogs'
-    }
-
-    const filteredBlogsData = blogsData.filter((blogData) => {
-        if (searchParams.trim() == '') {
-            return true;
+        if (language == 'cn') {
+            searchString = "博客";
         } else {
-            return blogData.title.toLowerCase().includes(searchParams.toLowerCase());
+            searchString = 'Blogs';
         }
-    })
+    } else {
+        filteredBlogsData = blogsData.filter((blogData) => {
+            if (searchParams.trim() == '') {
+                return true;
+            } else {
+                return blogData.title.toLowerCase().includes(searchParams.toLowerCase());
+            }
+        })
+    }
 
+    // if filter
+    if (sub_section != undefined) {
+        filteredBlogsData = blogsData.filter(blog => blog.sub_section === sub_section);
+        if (language == 'cn') {
+            searchString = '"' + sub_section + '" 的搜索结果：';
+        } else {
+            searchString = "Blogs in " + sub_section;
+        }
+
+    }
+
+    // alert
     if (filteredBlogsData.length == 0) {
         alertClass = 'd-inline-block';
     } else {
@@ -46,7 +72,7 @@ export function BlogGrid(props) {
                 </div>          
 
                 <div className='container d-flex justify-content-center'>
-                    <p className={'mb-10 alert alert-danger ' + alertClass}>{"Nothing found for " + searchParams}</p>
+                    <p className={'mb-10 alert alert-danger ' + alertClass}>{alertString}</p>
                 </div>  
 
                 <div className="row">
@@ -57,7 +83,7 @@ export function BlogGrid(props) {
     );
 }
 function BlogCard(props) {
-    const { title, date, img, alt, short_description, section } = props.blogData;
+    const { title, date, img, alt, short_description, section, sub_section } = props.blogData;
     const defaultImage = "/page/images/default.png";
     const [imageSrc, setImageSrc] = useState(img);
     
@@ -74,7 +100,7 @@ function BlogCard(props) {
                 </div>
                 <div className="col-8 col-lg-9">
                     <div className="card-body">
-                        <Link to={`${section}/${title}`} className="text-decoration-none">
+                        <Link to={`${section}/${sub_section}/${title}`} className="text-decoration-none">
                             <h2 className="card-title">{title}</h2>
                         </Link>
                         <div className="d-flex flex-wrap">

@@ -1,0 +1,252 @@
+[
+  {
+    "title": "连珠棋AI对战代理",
+    "date": "2025年2月",
+    "skills": "涉及技术：Python、Minimax算法、Alpha-Beta剪枝",
+    "img": "/page/images/projects/game_agent.png",
+    "description": "运用Minimax算法和Alpha-Beta剪枝技术开发的AI代理，可智能计算游戏最优下一步",
+    "section": "ml_algorithms",
+    "linksData": [
+      {
+        "website_name": "GitHub",
+        "url": "https://github.com/efeng2/cse415-agent"
+      }
+    ]
+  },
+  {
+    "title": "学校音乐社团搜索网站",
+    "date": "2025年3月",
+    "skills": "涉及技术：Firebase 实时数据库、React、Bootstrap、html、css、javascript",
+    "img": "/page/images/projects/band_search.png",
+    "description": "可登录，可根据用户情况更新实时数据库（需要谷歌显示）",
+    "section": "web_dev",
+    "linksData": [
+      {
+        "website_name": "网站",
+        "url": "https://band-search-92e0c.web.app/"
+      },
+      {
+        "website_name": "GitHub",
+        "url": "https://github.com/info340c-wi25/project-CA3"
+      }
+    ]
+  },
+  {
+    "title": "个人网站",
+    "date": "2025年2月",
+    "skills": "涉及技术：React、Bootstrap、html、css、js",
+    "img": "/page/images/projects/personal_page.png",
+    "description": "个人网站",
+    "section": "web_dev",
+    "linksData": [
+      {
+        "website_name": "网站（就是此网站）",
+        "url": "https://efeng2.github.io/page/cn"
+      },
+      {
+        "website_name": "GitHub",
+        "url": "https://github.com/efeng2/page"
+      }
+    ]
+  },
+  {
+    "title": "人口老龄化迁移模型",
+    "date": "2024年10月",
+    "skills": "涉及技术：数学建模、Python",
+    "img": "/page/images/projects/population.png",
+    "description": "通过微分方程组模拟三大年龄层的人口结构变迁，为解决劳动力可持续性挑战提供量化分析",
+    "section": "ml_algorithms",
+    "linksData": [
+      {
+        "website_name": "GitHub",
+        "url": "https://github.com/Youni2017/Amath383-FinalProject"
+      },
+      {
+        "website_name": "论文",
+        "url": "https://drive.google.com/file/d/1UKGSEnUZxb0gSoepEW5iqXKGIotBKzG_/view"
+      }
+    ]
+  },
+  {
+    "title": "Eatvolution个人健身助手",
+    "date": "2024年10月（Dubhacks黑客松参赛作品）",
+    "skills": "涉及技术：Perplexity AI、React、TypeScript、MySQL、Node.js、HTML/CSS/JavaScript",
+    "img": "/page/images/projects/evolution.jpg",
+    "description": "基于微分方程构建的三维人口结构模拟系统，聚焦劳动力可持续发展议题",
+    "section": "cs_programming",
+    "linksData": [
+      {
+        "website_name": "Devpost作品页",
+        "url": "https://devpost.com/software/temp-title-ayo482"
+      },
+      {
+        "website_name": "GitHub",
+        "url": "https://github.com/SamGanYX/Dubhacks2024"
+      }
+    ]
+  },
+  {
+    "title": "流浪犬只收容状态追踪系统",
+    "date": "2024年3月",
+    "skills": "涉及技术：Observable、Vegalite、D3.js",
+    "img": "/page/images/projects/dogs.gif",
+    "description": "通过数据可视化技术呈现收容所犬只的地理分布与领养状态，倡导'领养代替购买'理念",
+    "section": "data_vis",
+    "linksData": [
+      {
+        "website_name": "交互看板",
+        "url": "https://observablehq.com/d/f8fd2ad05f7aea78"
+      }
+    ]
+  },
+  {
+    "title": "PM2.5暴露水平与心血管疾病及医疗资源的空间关联研究",
+    "date": "2023年12月",
+    "skills": "涉及技术：QGIS地理信息系统",
+    "img": "/page/images/projects/qgis.png",
+    "description": "基于华盛顿州地理数据，分析空气污染、心血管疾病发病率与医疗机构可达性的空间相关性",
+    "section": "data_vis",
+    "linksData": [
+      {
+        "website_name": "研究报告",
+        "url": "https://drive.google.com/file/d/14gnFiz8M31wrMFbaaBIQj8_IZrdUyu-i/view"
+      }
+    ]
+  },
+  {
+    "title": "Estore电商平台（全栈项目）",
+    "date": "2023年6月",
+    "skills": "涉及技术：Node.js、MySQL、HTML/CSS/JavaScript",
+    "img": "/page/images/projects/eshop.gif",
+    "description": "采用全栈技术开发的服装电商原型系统，完整实现前后端功能模块",
+    "section": "web_dev",
+    "linksData": [
+      {
+        "website_name": "GitLab",
+        "url": "https://gitlab.cs.washington.edu/cse154-23sp-students/fp-partner-efeng2-evanc9"
+      }
+    ]
+  },
+  {
+    "title": "全球幸福指数影响因素及疫情冲击研究",
+    "date": "2022年6月",
+    "skills": "涉及技术：Python、Scikit-learn",
+    "img": "/page/images/projects/global_happiness.png",
+    "description": "基于机器学习算法解析全球幸福指数的关键影响因素，量化评估疫情对各国幸福指数的冲击",
+    "section": "ml_algorithms",
+    "linksData": [
+      {
+        "website_name": "GitHub",
+        "url": "https://github.com/efeng2/global_happiness_report"
+      },
+      {
+        "website_name": "研究报告",
+        "url": "https://drive.google.com/file/d/1zudoG_DB3pH_kipcv-Zjo_fKStrCiLER/view"
+      }
+    ]
+  },
+  {
+    "title": "新闻媒体公众偏好分析平台",
+    "date": "2022年8月",
+    "skills": "涉及技术：R Shiny、ggplot2、dplyr",
+    "img": "/page/images/projects/rshiny.png",
+    "description": "基于R Shiny构建的交互式分析平台，通过可视化技术揭示公众对不同新闻源的偏好特征",
+    "section": "data_vis",
+    "linksData": [
+      {
+        "website_name": "GitHub",
+        "url": "https://github.com/efeng2/popularity-of-news-articles"
+      },
+      {
+        "website_name": "在线应用",
+        "url": "https://trininol.shinyapps.io/info201/"
+      }
+    ]
+  },
+  {
+    "title": "Glide极限运动模拟系统",
+    "date": "2022年Dubhacks黑客松参赛作品",
+    "skills": "涉及技术：T-Mobile DevEdge物联网开发套件",
+    "img": "/page/images/projects/glide.gif",
+    "description": "利用物联网技术开发的跳伞运动模拟系统，通过传感器网络实现极限运动的安全体验",
+    "section": "cs_programming",
+    "linksData": [
+      {
+        "website_name": "Devpost作品页",
+        "url": "https://devpost.com/software/glide-blutqa"
+      },
+      {
+        "website_name": "演示网站",
+        "url": "https://tzuy32.wixsite.com/glide"
+      }
+    ]
+  },
+  {
+    "title": "Propinquity社交邻近应用",
+    "date": "2022年6月",
+    "skills": "涉及技术：信息系统设计",
+    "img": "/page/images/projects/propinquity.png",
+    "description": "基于地理位置服务的社交应用，通过日常任务场景促进用户间的自然社交连接",
+    "section": "cs_programming",
+    "linksData": [
+      {
+        "website_name": "设计报告",
+        "url": "https://drive.google.com/file/d/1xb-2fAdsDKa3e3OKV9c_HLP0sHZlh9Ao/view"
+      }
+    ]
+  },
+  {
+    "title": "Eco绿色物流平台（Husky Hackathon黑客大赛亚军）",
+    "date": "2022年Husky黑客大赛作品",
+    "skills": "涉及技术：信息系统设计、Figma",
+    "img": "/page/images/projects/eco.png",
+    "description": "建筑行业碳中和解决方案：通过资源调度平台帮助企业管理碳足迹，获大赛第二名",
+    "section": "cs_programming",
+    "linksData": [
+      {
+        "website_name": "大赛官网",
+        "url": "https://www.huskyhackathon.com/2022-hackathon"
+      },
+      {
+        "website_name": "原型演示",
+        "url": "https://www.figma.com/proto/6hth39GB7P4RVUOpUs5xM0/Prototype"
+      }
+    ]
+  },
+  {
+    "title": "UW Mind Hub校园心理互助平台",
+    "date": "2021年Dubhacks黑客松参赛作品",
+    "skills": "涉及技术：Figma原型设计",
+    "img": "/page/images/projects/mindhub.png",
+    "description": "获Visa网络支付专项奖：提升大学生心理健康与社交连接的移动应用原型设计",
+    "section": "cs_programming",
+    "linksData": [
+      {
+        "website_name": "Devpost作品页",
+        "url": "https://devpost.com/software/uw-mind-hub"
+      },
+      {
+        "website_name": "交互原型",
+        "url": "https://www.figma.com/proto/vR6wCi2USBj15cm4vyxKP1/Product"
+      },
+      {
+        "website_name": "演示视频",
+        "url": "https://vimeo.com/638409461"
+      }
+    ]
+  },
+  {
+    "title": "ASL手语字母识别系统",
+    "date": "2020年8月",
+    "skills": "涉及技术：支持向量机、XGBoost、人工神经网络",
+    "img": "/page/images/projects/asl.png",
+    "description": "基于Leap Motion传感器的手势识别系统，为听障人士开发的手语翻译解决方案",
+    "section": "ml_algorithms",
+    "linksData": [
+      {
+        "website_name": "技术文档",
+        "url": "https://drive.google.com/drive/folders/1PPO6sh9tEDkU3Z2uvrIZhmFJ614v4vXR"
+      }
+    ]
+  }
+]

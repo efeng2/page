@@ -1,12 +1,39 @@
 import React, { useEffect } from 'react';
-import { useLocation } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 
 // props: project_data
 export function ProjectsGrid(props) {
-    const { projectsData } = props
+    const { projectsDataEN, projectsDataCN } = props;
+
+    const text_EN = {
+        title: "Projects",
+        ml_algorithms: "Maching Learning and AI Algorithms",
+        data_vis: "Data Visualization",
+        cs_programming: "Computer Programming and App Development",
+        web_dev: "Web Development"
+    }
+
+    const text_CN ={
+        title: "项目",
+        ml_algorithms: "机器学习与AI算法", 
+        data_vis: "数据可视化",
+        cs_programming: "计算机编程与应用开发",
+        web_dev: "网页开发"
+    }
+
+    let curr_text = text_EN;
+    let projectsData = projectsDataEN;
+
+    const { language } = useParams();
+    if (language == 'cn') {
+        projectsData = projectsDataCN;
+        curr_text = text_CN;
+    }
+
     const location = useLocation();
 
     useEffect(() => {
+        console.log('in')
         if (location.hash) {
           let elementId = decodeURIComponent(location.hash.substring(1));
           elementId = elementId.replace(/\s+/g, '-');
@@ -16,8 +43,8 @@ export function ProjectsGrid(props) {
             targetElement.scrollIntoView({ behavior: "smooth" });
           }
         }
-      }, [location]);      
-
+      }, [location]);   
+      
     const mlAlgorithmsProjects = projectsData.filter(project => project.section === 'ml_algorithms');
     const dataVisProjects = projectsData.filter(project => project.section === 'data_vis');
     const webDevProjects = projectsData.filter(project => project.section === 'web_dev');
@@ -55,11 +82,11 @@ export function ProjectsGrid(props) {
         <>
             <section id="projects" className="container mb-5">
                 <div className="d-flex justify-content-center">
-                    <h2 className="my-4">Projects</h2>
+                    <h2 className="my-4">{curr_text.title}</h2>
                 </div>            
 
                 <div>
-                    <h2 className="my-4 text-center">Maching Learning and AI Algorithms</h2>
+                    <h2 className="my-4 text-center">{curr_text.ml_algorithms}</h2>
                     <div className="d-flex justify-content-center">
                         <div className="row">
                             {mLAlorithmsArray}
@@ -68,7 +95,7 @@ export function ProjectsGrid(props) {
                 </div>         
 
                 <div>
-                    <h2 className="my-4 text-center">Data Visualization</h2>
+                    <h2 className="my-4 text-center">{curr_text.data_vis}</h2>
                     <div className="d-flex justify-content-center">
                         <div className="row">
                             {dataVisArray}
@@ -77,7 +104,7 @@ export function ProjectsGrid(props) {
                 </div> 
 
                 <div>
-                    <h2 className="my-4 text-center">Computer Programming and App Development</h2>
+                    <h2 className="my-4 text-center">{curr_text.cs_programming}</h2>
                     <div className="d-flex justify-content-center">
                         <div className="row">
                             {csProgrammingArray}
@@ -86,7 +113,7 @@ export function ProjectsGrid(props) {
                 </div>  
 
                 <div>
-                    <h2 className="my-4 text-center">Web Development</h2>
+                    <h2 className="my-4 text-center">{curr_text.web_dev}</h2>
                     <div className="d-flex justify-content-center">
                         <div className="row">
                             {webDevArray}

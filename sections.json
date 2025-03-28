@@ -1,0 +1,25 @@
+{
+  "人工智能与机器学习": [
+    "Bayes Nets",
+    "Game Agents",
+    "Machine Learning",
+    "Markov Models",
+    "Natrual Language Processing",
+    "Search Algorithms"
+  ],
+  "学习反思": [
+    "人工智能"
+  ],
+  "应用数学": [
+    "数学建模"
+  ],
+  "数据处理与编程": [
+    "Parallel Computing",
+    "数据科学"
+  ],
+  "网站制作": [
+    "Basics",
+    "Database",
+    "React"
+  ]
+}

@@ -1,24 +1,99 @@
 import React, { useState } from "react"
 import { Outlet } from "react-router"
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export function BlogsPage(props) {
-    const { blogsData } = props;
+    const { blogsDataEN, blogsDataCN } = props;
+
+    let blogsData = blogsDataEN;
+
+    const text_EN = {
+        latest_updates: "Latest Updates",
+        blog_sections: "Blog Sections",
+        sections: ['Maching Learning and AI Algorithms', 'Data Visualization', 'Computer Programming and App Development', 'Web Development']
+    }
+
+    const text_CN ={
+        latest_updates: "最新动态",
+        blog_sections: "博客分类",
+        sections: ["机器学习与AI算法", "数据可视化", "计算机编程与应用开发", "网页开发"]
+    }
+
+    const sections_EN = {
+        "Advanced Math": [
+          "Mathematical Modeling"
+        ],
+        "AI and ML Algorithms": [
+          "Bayes Nets",
+          "Game Agents",
+          "Machine Learning",
+          "Markov Models",
+          "Natrual Language Processing",
+          "Search Algorithms"
+        ],
+        "Computer Science": [
+          "Data Science",
+          "Parallel Computing"
+        ],
+        "Reflections": [
+          "Artifical Intellegence"
+        ],
+        "Web Development": [
+          "Basics",
+          "Database",
+          "React"
+        ]
+    }
+
+    const sections_CN = {
+        "人工智能与机器学习": [
+          "Bayes Nets",
+          "Game Agents",
+          "Machine Learning",
+          "Markov Models",
+          "Natrual Language Processing",
+          "Search Algorithms"
+        ],
+        "学习反思": [
+          "人工智能"
+        ],
+        "应用数学": [
+          "数学建模"
+        ],
+        "数据处理与编程": [
+          "Parallel Computing",
+          "数据科学"
+        ],
+        "网站制作": [
+          "Basics",
+          "Database",
+          "React"
+        ]
+    }
+
+    let curr_text = text_EN;
+    let sections = sections_EN;
+
+    const { language } = useParams();
+    if (language == 'cn') {
+        blogsData = blogsDataCN;
+        curr_text = text_CN;
+        sections = sections_CN;
+    }
 
     return (
         <>
             <div className="d-flex">
-                <Sidebar blogsData={blogsData} />
+                <Sidebar blogsData={blogsData} sections={sections} curr_text={curr_text}/>
                 <Outlet />
             </div>
 
         </>
     );
 }
-
 function Sidebar(props) {
-    const { blogsData } = props;
-    const sections = ['ml_algorithms', 'data_vis', 'web_dev', 'cs_programming'];
+    const { blogsData, sections, curr_text } = props;
+
     const [expandedSection, setExpandedSection] = useState(null);
 
     const handleSectionClick = (section) => {
@@ -27,17 +102,15 @@ function Sidebar(props) {
 
     const latestUpdates = blogsData.slice(0, 3);
 
-    const latestUpdatesArray = latestUpdates.map((project) => (
-        <li key={project.title} className="project-title">
-            <Link  className="links hover-orange" to={`${project.section}/${project.title}`}>
-                {project.title}
+    const latestUpdatesArray = latestUpdates.map((blog) => (
+        <li key={blog.title} className="project-title">
+            <Link className="links hover-orange" to={`${blog.section}/${blog.sub_section}/${blog.title}`}>
+                {blog.title}
             </Link>
         </li>
     ))
 
-    const sectionsArray = sections.map((section) => {
-        const sectionData = blogsData.filter((project) => project.section === section);
-
+    const sectionsArray = Object.entries(sections).map(([section, subsections]) => {
         return (
             <div key={section} className="section-container">
                 <div className="section-title hover-orange" onClick={() => handleSectionClick(section)}>
@@ -46,9 +119,14 @@ function Sidebar(props) {
                 </div>
                 <div className={`project-list ${expandedSection === section ? 'expanded' : ''}`}>
                     <ul>
-                        {sectionData.map((project) => (
-                            <li key={project.title} className="project-title">
-                                <Link className="links hover-orange" to={`${project.section}/${project.title}`}>{project.title}</Link>
+                        {subsections.map((subsection) => (
+                            <li key={subsection} className="project-title">
+                                <Link 
+                                    className="links hover-orange" 
+                                    to={`${section}/${subsection.replace(/\s+/g, '%20')}`}
+                                >
+                                    {subsection}
+                                </Link>
                             </li>
                         ))}
                     </ul>
@@ -61,13 +139,13 @@ function Sidebar(props) {
         <div className="sidebar d-none d-md-inline-block">
             <div className="m-lg-1 mt-lg-2">
                 <div className="latest-updates">
-                    <h5>Latest Updates</h5>
+                    <h5>{curr_text.latest_updates}</h5>
                     <ul>
                         {latestUpdatesArray}
                     </ul>
                 </div>
                 
-                <h4 className="projects-header">Blog Sections</h4>
+                <h4 className="projects-header">{curr_text.blog_sections}</h4>
                 {sectionsArray}
             </div>
         </div>

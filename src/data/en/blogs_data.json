@@ -1,0 +1,266 @@
+[
+    {
+        "title": "Dynamical Systems and Chaos Study Notes",
+        "date": "2025-03-14",
+        "short_description": "A **dynamical system** is a set of rules that govern the time evolution of a set of state variables.",
+        "section": "Advanced Math",
+        "sub_section": "Mathematical Modeling",
+        "img": "/page/blogs/Advanced Math/Mathematical Modeling/image-18.png"
+    },
+    {
+        "title": "Asimov's Three Laws of Robotics and the Ethics of AI",
+        "date": "2025-03-11",
+        "short_description": "A robot may not injure a human being or, through inaction, allow a human being to come to harm.",
+        "section": "Reflections",
+        "sub_section": "Artifical Intellegence",
+        "img": "https://www.researchgate.net/publication/369477508/figure/fig1/AS:11431281150203946@1681870771676/Isaac-Asimovs-three-laws-of-robotics.png"
+    },
+    {
+        "title": "Preceptrons (Neural Networks)",
+        "date": "2025-03-05",
+        "short_description": "",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Machine Learning",
+        "img": "/page/blogs/AI and ML Algorithms/Machine Learning/image.png"
+    },
+    {
+        "title": "Markov Decision Processes",
+        "date": "2025-03-03",
+        "short_description": "",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Markov Models",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Q-Learning in MDPs",
+        "date": "2025-03-03",
+        "short_description": "",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Markov Models",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Hidden Markov Models and Viterbi Algorithm",
+        "date": "2025-03-01",
+        "short_description": "",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Markov Models",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Bayes Nets (Event Independence and Joint Probability Distributions)",
+        "date": "2025-02-25",
+        "short_description": "",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Bayes Nets",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "D-Separation",
+        "date": "2025-02-25",
+        "short_description": "D-separation is used in Bayes Nets. In a system with multiple random variables, we want to know the conditionally independent of event A and B given the condition that other variables are observed.",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Bayes Nets",
+        "img": "/page/blogs/AI and ML Algorithms/Bayes Nets/d-separation.png"
+    },
+    {
+        "title": "Value Iteration and Bellman Equation in MDPs",
+        "date": "2025-02-25",
+        "short_description": "Update Equation",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Markov Models",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "How to Host React Webpages on Github Pages",
+        "date": "2025-02-25",
+        "short_description": "If deploying to GitHub Pages, don't forget to build first.",
+        "section": "Web Development",
+        "sub_section": "React",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Firebase Realtime Database",
+        "date": "2025-02-20",
+        "short_description": "",
+        "section": "Web Development",
+        "sub_section": "Database",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "AJAX Requests (Async Fetch)",
+        "date": "2025-02-20",
+        "short_description": "",
+        "section": "Web Development",
+        "sub_section": "React",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "React Effect Hooks (How to let code only run once when page is loaded)",
+        "date": "2025-02-20",
+        "short_description": "",
+        "section": "Web Development",
+        "sub_section": "React",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "How to Build a React App",
+        "date": "2025-02-09",
+        "short_description": "Navigate to the project folder:",
+        "section": "Web Development",
+        "sub_section": "React",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "**Adversarial Search: Minimax and Alpha-Beta Pruning for Game Agents**",
+        "date": "2025-02-07",
+        "short_description": "",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Game Agents",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Javascript DOM Manipulation",
+        "date": "2025-02-03",
+        "short_description": "",
+        "section": "Web Development",
+        "sub_section": "Basics",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Beginner's Guide to How to Use Bootstrap (Utilities, Responsiveness)",
+        "date": "2025-01-20",
+        "short_description": "CSS frameworks simplify styling by providing predefined CSS rules that can be easily integrated into your website by modifying its HTML structure. Bootstrap, created by Twitter in 2011, is the oldest and most popular CSS framework.",
+        "section": "Web Development",
+        "sub_section": "Basics",
+        "img": "/page/blogs/Web Development/Basics/beginner's_guide_to_how_to_use_bootstrap_(utilities,_responsiveness"
+    },
+    {
+        "title": "Heuristics and A* Search",
+        "date": "2025-01-13",
+        "short_description": "The state space represents all possible states that can be encountered while solving a problem. It defines the full set of configurations a system can take during the search process.",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Search Algorithms",
+        "img": "/page/blogs/AI and ML Algorithms/Search Algorithms/<Heuristics and A-Star Search.png>"
+    },
+    {
+        "title": "numPY and Pandas - Python Libraries for Data Science",
+        "date": "2025-01-13",
+        "short_description": "",
+        "section": "Computer Science",
+        "sub_section": "Data Science",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "HTML VS Code Shortcut",
+        "date": "2025-01-01",
+        "short_description": "! + enter",
+        "section": "Web Development",
+        "sub_section": "Basics",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "React Router for Single Page Apps",
+        "date": "2025-01-01",
+        "short_description": "npm install react-router-dom",
+        "section": "Web Development",
+        "sub_section": "React",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Mathematical Modeling",
+        "date": "2024-12-20",
+        "short_description": "",
+        "section": "Advanced Math",
+        "sub_section": "Mathematical Modeling",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Separable Equations (Method of Separation)",
+        "date": "2024-11-20",
+        "short_description": "",
+        "section": "Advanced Math",
+        "sub_section": "Mathematical Modeling",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Derivative Speedrun",
+        "date": "2024-11-17",
+        "short_description": "Rate of change of a function with respect to a variable (eg. velocity)",
+        "section": "Advanced Math",
+        "sub_section": "Mathematical Modeling",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Integral Speedrun",
+        "date": "2024-11-17",
+        "short_description": "Area under a curve.",
+        "section": "Advanced Math",
+        "sub_section": "Mathematical Modeling",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "How to Publish and Deploy Websites Using Github Pages",
+        "date": "2024-08-05",
+        "short_description": "Github Pages is a static site hosting service that provides a simple way for individuals, projects, or organizations to create and deploy websites.",
+        "section": "Web Development",
+        "sub_section": "Basics",
+        "img": "/page/blogs/Web Development/Basics/<how_to_publish_and_deploy_websites_using_github_pages.png>"
+    },
+    {
+        "title": "(Hugging Face) How to Train and Evaluate Transformer Models (Code + Practice)",
+        "date": "2024-08-03",
+        "short_description": "In addition to this, the following Python libraries are used in this practice: `transformers`, `pytorch`, `evaluate`, and `numpy`. The model used is `bert-base-uncased`.",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Natrual Language Processing",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "(Hugging Face) Transformers Tokenizers - Tokenization + Practice",
+        "date": "2024-07-27",
+        "short_description": "**Tokenization**, the process of converting sentences into tokens for processing, is one of the most fundamental and initial steps in Natural Language Processing (NLP). It involves dividing the input text into manageable token units.",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Natrual Language Processing",
+        "img": "/page/blogs/AI and ML Algorithms/Natrual Language Processing/https://i-blog.csdnimg.cn/direct/92d61edabd3f425cb6fcff5a92234cd8.png"
+    },
+    {
+        "title": "(Hugging Face Basics) A Simple Explanation of the Transformer Model and Architecture",
+        "date": "2024-07-22",
+        "short_description": "A Transformer is a neural network architecture based on the self-attention mechanism (Self-attention mechanism), proposed in the 2017 paper \"Attention is All You Need,\" which brought a new model architecture to the field of Natural Language Processing (NLP). It is a type of seq2seq model (Sequence t",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Natrual Language Processing",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Classifiers (Machine Learning Algorithms)",
+        "date": "2023-10-11",
+        "short_description": "- Query to Leaves",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Machine Learning",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Clustering",
+        "date": "2023-10-11",
+        "short_description": "- Labels Are Unknown",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Machine Learning",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Deep Learning",
+        "date": "2023-10-11",
+        "short_description": "- Many Perceptrons, Likely to Overfit",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Machine Learning",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "Regression and Optimization",
+        "date": "2023-10-11",
+        "short_description": "",
+        "section": "AI and ML Algorithms",
+        "sub_section": "Machine Learning",
+        "img": "/page/images/default.png"
+    }
+]

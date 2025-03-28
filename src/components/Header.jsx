@@ -1,8 +1,10 @@
 
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
-export function Header() {
+export function Header(props) {
+    const { curr_text } = props;
+    const { language } = useParams();
 
     useEffect(() => {
         if (window.particlesJS) {
@@ -53,10 +55,10 @@ export function Header() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-8 d-flex flex-column justify-content-center">
-                        <h1>Emily Feng</h1>
-                        <p className="lead">Data Science Professional | Creative Enthusiast</p>
+                        <h1>{curr_text.name}</h1>
+                        <p className="lead">{curr_text.description}</p>
                         <div className="d-flex justify-content-start">
-                            <Link to="/projects" className="btn btn-primary mt-3 px-4 py-2">View Projects</Link>
+                            <Link to={`/${language}/projects`} className="btn btn-primary mt-3 px-4 py-2">{curr_text.view_btn}</Link>
                         </div>
                     </div>
                     <div className="col-md-4 text-center mb-4 mt-5 mt-md-4">

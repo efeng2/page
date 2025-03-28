@@ -327,3 +327,13 @@ code {
     max-width: 1200px;
   }
 }
+
+.w-custom {
+  width: 100%;
+}
+
+@media (min-width: 992px){
+  .w-custom {
+    width: auto;
+  }
+}
