@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 export const AboutGrid = (props) => {
   const { latest_blogs_data, latest_projects_data, curr_text } = props;
   const [autoPlay, setAutoPlay] = useState(true);
-  const language = useParams();
+  const { language } = useParams();
 
   return (
     <div className="container pt-5">
@@ -31,7 +31,7 @@ export const AboutGrid = (props) => {
                       <div className="project-image">
                         <img src={project.img} alt={project.title} className="img-fluid"/> 
                       </div>
-                      <Link className="btn btn-primary mt-3 mb-5" to={language + "/projects#" + project.title}>{curr_text.view_btn}</Link>
+                      <Link className="btn btn-primary mt-3 mb-5" to={"/" + language + "/projects#" + project.title}>{curr_text.view_btn}</Link>
                   </Carousel.Item>
                 ))}
               </Carousel>
