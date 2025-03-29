@@ -1,7 +1,7 @@
 [
   {
     "title": "UW Band Search Web App",
-    "date": "2025年3月",
+    "date": "March 2025",
     "skills": "Skills: Firebase Realtime Database、React、Bootstrap、html、css、javascript",
     "img": "/page/images/projects/band_search.png",
     "description": "User Authentication and Login, Update realtime database according to user interaction.",
@@ -33,7 +33,7 @@
   },
   {
     "title": "Personal Webpage",
-    "date": "2025年2月",
+    "date": "Feburary 2025",
     "skills": "Skills: React、Bootstrap、html、css、js",
     "img": "/page/images/projects/personal_page.png",
     "description": "Personal Webpage",
