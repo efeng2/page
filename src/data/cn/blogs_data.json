@@ -69,7 +69,7 @@
         "short_description": "",
         "section": "人工智能与机器学习",
         "sub_section": "贝叶斯网络",
-        "img": "/page/blogs/cn/人工智能与机器学习/贝叶斯网络/image.png"
+        "img": "/page/blogs/cn/人工智能与机器学习/贝叶斯网络/Slide2.PNG"
     },
     {
         "title": "贝叶斯网络（事件独立性与联合概率分布）",
@@ -85,14 +85,6 @@
         "short_description": "",
         "section": "人工智能与机器学习",
         "sub_section": "马尔可夫模型",
-        "img": "/page/images/default.png"
-    },
-    {
-        "title": "AJAX Requests (Async Fetch)",
-        "date": "2025-02-20",
-        "short_description": "",
-        "section": "网站制作",
-        "sub_section": "React",
         "img": "/page/images/default.png"
     },
     {
@@ -181,6 +173,14 @@
         "short_description": "",
         "section": "人工智能与机器学习",
         "sub_section": "大语言模型",
+        "img": "/page/images/default.png"
+    },
+    {
+        "title": "AJAX 请求（异步数据获取）",
+        "date": "2025-01-01",
+        "short_description": "",
+        "section": "网站制作",
+        "sub_section": "React",
         "img": "/page/images/default.png"
     },
     {
