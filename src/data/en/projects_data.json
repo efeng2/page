@@ -32,6 +32,20 @@
     ]
   },
   {
+    "title": "Python AI Algorithm Research & Implementation",
+    "date": "February 2025",
+    "skills": "Skills: Python, AI Algorithms",
+    "img": "/page/images/projects/hanoi.jpg",
+    "description": "Classic Search Algorithms: Implemented BFS/DFS/IDDFS/A* algorithms to solve the 8-puzzle problem (with heuristic optimization for efficiency) and the Farmer-Fox puzzle. Reinforcement Learning Application: Built an intelligent decision system using Q-learning and MDP, successfully solving the Tower of Hanoi optimal path problem.",
+    "section": "ml_algorithms",
+    "linksData": [
+      {
+        "website_name": "GitHub",
+        "url": "https://github.com/skweston123/CSE415"
+      }
+    ]
+  },
+  {
     "title": "Personal Webpage",
     "date": "Feburary 2025",
     "skills": "Skills: React、Bootstrap、html、css、js",
@@ -82,6 +96,20 @@
       {
         "website_name": "Github",
         "url": "https://github.com/SamGanYX/Dubhacks2024"
+      }
+    ]
+  },
+  {
+    "title": "Large Language Model Research",
+    "date": "June 2024",
+    "skills": "Skills: Python, AI Algorithms",
+    "img": "/page/images/projects/llm.png",
+    "description": "Conducted AI research under professorial supervision focusing on: large language model architectures, NLP model fine-tuning techniques (GLM-4-9B-Chat-1M implementation), Transformer library mechanisms, and core LLM algorithms. Published technical articles on CSDN.",
+    "section": "ml_algorithms",
+    "linksData": [
+      {
+        "website_name": "CSDN",
+        "url": "https://blog.csdn.net/2401_86205687?spm=1011.2415.3001.5343"
       }
     ]
   },
