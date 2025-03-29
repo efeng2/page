@@ -93,7 +93,7 @@ export const AboutGrid = (props) => {
                 </div>
                 <div className="col-4">
                   <img 
-                    src="https://efeng2.github.io/page/images/cardistry.png" 
+                    src="https://efeng2.github.io/page/images/cardistry.jpg" 
                     alt="Cardistry" 
                     className="img-fluid rounded shadow-sm img-size" 
                   />
