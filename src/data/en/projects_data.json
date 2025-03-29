@@ -36,7 +36,7 @@
     "date": "February 2025",
     "skills": "Skills: Python, AI Algorithms",
     "img": "/page/images/projects/hanoi.jpg",
-    "description": "Classic Search Algorithms: Implemented BFS/DFS/IDDFS/A* algorithms to solve the 8-puzzle problem (with heuristic optimization for efficiency) and the Farmer-Fox puzzle. Reinforcement Learning Application: Built an intelligent decision system using Q-learning and MDP, successfully solving the Tower of Hanoi optimal path problem.",
+    "description": "Classic Search Algorithms: Implemented BFS/DFS/IDDFS/A* algorithms (with heuristic optimization for efficiency). Reinforcement Learning with Q-learning and MDP, successfully solving the Tower of Hanoi problem.",
     "section": "ml_algorithms",
     "linksData": [
       {
