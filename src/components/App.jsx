@@ -38,9 +38,9 @@ function App() {
                         <Route index element={<BlogGrid blogsDataEN={BLOGS_DATA_EN} blogsDataCN={BLOGS_DATA_CN}/>} />
                     </Route>
                     <Route path="connect" element={<Connect />} />
-                    {/* <Route path="*" element={<Navigate to="/"/>} /> */}
+                    <Route path="*" element={<Navigate to="/"/>} />
                 </Route>
-                {/* <Route path="*" element={<Navigate to="/en"/>} /> */}
+                <Route path="*" element={<Navigate to="/en"/>} />
             </Routes>
             <Footer />
         </>
