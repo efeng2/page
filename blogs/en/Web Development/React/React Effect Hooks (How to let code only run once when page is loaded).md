@@ -1,43 +1,90 @@
-# React Effect Hooks (How to let code only run once when page is loaded)
+# How to Use React Effect Hooks
 2025-02-20
 
-Useful for async processes to not run infinitely!
+## What are effect hooks
+Effect hooks only run once when a page loads.
 
-import React, { useState,useEffect } from 'react';
+They are particularly useful for async processes to prevent infinite execution loops.
 
+---
 
-useEffect(()=>{
+## Basic useEffect Syntax
 
-console.log("in effect hook");
+```jsx
+import React, { useState, useEffect } from 'react';
 
-const url ="https://api.github.com/search/repositories?9="+queryInput;console.log("sending reguest to", url);
+function ExampleComponent() {
+  const [data, setData] = useState(null);
+  const [queryInput, setQueryInput] = useState('react');
 
-fetch(url)
+  useEffect(() => {
+    console.log("Effect hook triggered");
+    
+    const url = `https://api.github.com/search/repositories?q=${queryInput}`;
+    console.log("Sending request to", url);
 
-.then(function(response){return response.json();
+    fetch(url)
+      .then(response => response.json())
+      .then(dataObj => {
+        console.log(dataObj);
+        setData(dataObj.items);
+      });
+  }, [queryInput]); // Dependency array - effect reruns when queryInput changes
 
-})
+  return (
+    <div>
+      {/* Render your data here */}
+    </div>
+  );
+}
+```
 
-.then(function(data0bj){console.log(data0bj);setStateData(data0bj.items);
+## Only Running Once (Empty Dependency Array)
 
-I
+```jsx
+useEffect(() => {
+  // This code will run only once when component mounts
+  console.log("Component mounted");
+  
+  // Fetch initial data
+  fetchInitialData();
+  
+}, []); // Empty array means run only once
+```
 
-}，[currentUser])
+## Cleanup Functions
+Cleanup functions handle resource cleanup, prevent memory leaks, and manages states (clear event listeners, timers, aborts request)
 
-//[currentUser] -> rerun whenever currentUser changes
+```jsx
+import React, { useState, useEffect } from "react";
 
+function MyComponent(props) {
+  useEffect(() => {
+    console.log("Setting up subscriptions or event listeners");
+    
+    // Cleanup function
+    return function() {
+      console.log("Component unmounting - cleaning up");
+      // Remove subscriptions, event listeners, etc.
+    };
+  }, []);
 
+  return <div>My Component Content</div>;
+}
+```
 
-Cleanup Function
+## Key Points:
+1. **Dependency Array** controls when the effect runs:
+   - `[]` - Runs only on mount
+   - `[var1, var2]` - Runs when those variables change
+   - No array - Runs after every render
 
-import React,{useState,usEffect }from "react';
+2. **Cleanup Functions** are essential for:
+   - Removing event listeners
+   - Cancelling API requests
+   - Clearing timeouts/intervals
+   - Other resource cleanup
 
-function MyComponent(props){//specify the effect hook functionuseEffect(()=>{
-
-//...do persistent work,set up subscriptions, etc
-
-//function to run when the Component is being removedconst cleanupFunc=function(){console.log("component being removed")
-
-return cleanupFunc;//return function for React to call later}，[])
-
-return(<div>...</div>)
+3. **Async Patterns**:
+   - Either use `.then()` chains inside useEffect
+   - Or declare an async function inside the effect and call it

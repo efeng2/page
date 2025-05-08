@@ -1,10 +1,9 @@
 # AJAX Requests (Async Fetch)
-**2025-02-20**  
+2025-02-20
 
 AJAX (Asynchronous JavaScript and XML) enables web applications to send and retrieve data asynchronously without interfering with the rest of the code execution.  
 
-## HTML Form Example  
-Here’s a basic form that submits data via AJAX:  
+## HTML Form Example   
 
 ```html
 <form role="form" method="GET" action="/signup">
