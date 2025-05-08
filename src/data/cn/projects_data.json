@@ -42,6 +42,10 @@
       {
         "website_name": "GitHub",
         "url": "https://github.com/skweston123/CSE415"
+      },
+      {
+        "website_name": "演示视频",
+        "url": "https://easylink.cc/18cx02"
       }
     ]
   },
@@ -78,6 +82,10 @@
       {
         "website_name": "论文",
         "url": "https://drive.google.com/file/d/1UKGSEnUZxb0gSoepEW5iqXKGIotBKzG_/view"
+      },
+      {
+        "website_name": "介绍视频",
+        "url": "https://drive.google.com/file/d/1EXJt1dM8dl8NIzriWWqBu_39wyMbg-rK/view?usp=sharing"
       }
     ]
   },
@@ -96,6 +104,10 @@
       {
         "website_name": "GitHub",
         "url": "https://github.com/SamGanYX/Dubhacks2024"
+      },
+      {
+        "website_name": "演示视频",
+        "url": "https://drive.google.com/file/d/1o2wNJvN-zWyEz9ASpSrZJ4j3o_MLAjY1/view?usp=sharing"
       }
     ]
   },
@@ -110,6 +122,10 @@
       {
         "website_name": "CSDN",
         "url": "https://blog.csdn.net/2401_86205687?spm=1011.2415.3001.5343"
+      },
+      {
+        "website_name": "演示视频",
+        "url": ""
       }
     ]
   },
@@ -124,6 +140,10 @@
       {
         "website_name": "交互看板",
         "url": "https://observablehq.com/d/f8fd2ad05f7aea78"
+      },
+      {
+        "website_name": "演示视频",
+        "url": ""
       }
     ]
   },
@@ -152,6 +172,10 @@
       {
         "website_name": "GitLab",
         "url": "https://gitlab.cs.washington.edu/cse154-23sp-students/fp-partner-efeng2-evanc9"
+      },
+      {
+        "website_name": "演示视频",
+        "url": ""
       }
     ]
   },
@@ -188,6 +212,10 @@
       {
         "website_name": "在线应用",
         "url": "https://trininol.shinyapps.io/info201/"
+      },
+      {
+        "website_name": "演示视频",
+        "url": ""
       }
     ]
   },
@@ -272,7 +300,7 @@
     "section": "ml_algorithms",
     "linksData": [
       {
-        "website_name": "技术文档",
+        "website_name": "论文",
         "url": "https://drive.google.com/drive/folders/1PPO6sh9tEDkU3Z2uvrIZhmFJ614v4vXR"
       }
     ]

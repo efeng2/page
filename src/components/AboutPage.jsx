@@ -78,24 +78,7 @@ export function AboutPage(props) {
     return(
         <>
             <Header curr_text={curr_text}/>
-            {/* <QuoteBox /> */}
             <AboutGrid latest_blogs_data={latest_blogs_data} latest_projects_data={latest_projects_data} curr_text={curr_text}/>
         </>
     )
 }
-
-// const QuoteBox = () => {
-//     const quote = "The only limit to our realization of tomorrow is our doubts of today.";
-//     const author = "Franklin D. Roosevelt";
-
-//     return (
-//         <div className="quote-container">
-//             <div className="quote-card">
-//                 <div className="quote-marks top">&ldquo;</div>
-//                 <blockquote className="quote-text">{quote}</blockquote>
-//                 <footer className="quote-author">- {author}</footer>
-//                 <div className="quote-marks bottom">&rdquo;</div>
-//             </div>
-//         </div>
-//     );
-// };
