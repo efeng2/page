@@ -1,24 +1,27 @@
 {
-  "人工智能与机器学习": [
-    "强化学习",
-    "搜索算法",
-    "数据建模",
-    "机器学习算法",
-    "深度学习",
-    "自然语言处理"
+  "Advanced Math": [
+    "Mathematical Modeling"
   ],
-  "学习反思": [
-    "人工智能"
+  "AI and ML Algorithms": [
+    "AI Agents",
+    "Bayes Nets",
+    "Game Agents",
+    "Machine Learning",
+    "Markov Models",
+    "Natrual Language Processing",
+    "Neural Networks",
+    "Search Algorithms"
   ],
-  "应用数学": [
-    "数学建模"
+  "Computer Science": [
+    "Data Science",
+    "Parallel Computing"
   ],
-  "数据处理与编程": [
-    "并行计算"
+  "Reflections": [
+    "Artifical Intellegence"
   ],
-  "网站制作": [
-    "React",
-    "基础",
-    "数据库"
+  "Web Development": [
+    "Basics",
+    "Database",
+    "React"
   ]
 }

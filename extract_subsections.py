@@ -2,7 +2,7 @@ import os
 import json
 from pathlib import Path
 
-root_dir = Path("public/blogs/cn")
+root_dir = Path("public/blogs/en")
 
 # Resulting structure: {section: [sub_section1, sub_section2, ...]}
 section_map = {}

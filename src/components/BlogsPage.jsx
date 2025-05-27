@@ -21,29 +21,31 @@ export function BlogsPage(props) {
 
     const sections_EN = {
         "Advanced Math": [
-          "Mathematical Modeling"
+            "Mathematical Modeling"
         ],
         "AI and ML Algorithms": [
-          "Bayes Nets",
-          "Game Agents",
-          "Machine Learning",
-          "Markov Models",
-          "Natrual Language Processing",
-          "Search Algorithms"
+            "AI Agents",
+            "Bayes Nets",
+            "Game Agents",
+            "Machine Learning",
+            "Markov Models",
+            "Natrual Language Processing",
+            "Neural Networks",
+            "Search Algorithms"
         ],
         "Computer Science": [
-          "Data Science",
-          "Parallel Computing"
+            "Data Science",
+            "Parallel Computing"
         ],
         "Reflections": [
-          "Artifical Intellegence"
+            "Artifical Intellegence"
         ],
         "Web Development": [
-          "Basics",
-          "Database",
-          "React"
+            "Basics",
+            "Database",
+            "React"
         ]
-    }
+        }
 
     const sections_CN = {
         "人工智能与机器学习": [

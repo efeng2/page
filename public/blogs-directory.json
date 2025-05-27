@@ -50,11 +50,6 @@
     "en": [
       "en\\AI and ML Algorithms\\Bayes Nets\\Bayes Nets (Event Independence and Joint Probability Distributions).md",
       "en\\AI and ML Algorithms\\Bayes Nets\\D-Separation.md",
-      "en\\AI and ML Algorithms\\Data Processing\\Flink.md",
-      "en\\AI and ML Algorithms\\Data Processing\\Hadoop.md",
-      "en\\AI and ML Algorithms\\Data Processing\\Hive.md",
-      "en\\AI and ML Algorithms\\Data Processing\\SQL Database Structure and Common Phrases.md",
-      "en\\AI and ML Algorithms\\Data Processing\\Spark.md",
       "en\\AI and ML Algorithms\\Game Agents\\(Adversarial Search) Minimax and Alpha-Beta Pruning (Game Agents).md",
       "en\\AI and ML Algorithms\\Machine Learning\\Classifiers (Machine Learning Algorithms).md",
       "en\\AI and ML Algorithms\\Machine Learning\\Clustering.md",
@@ -85,7 +80,6 @@
       "en\\Reflections\\Artifical Intellegence\\Asimov's Three Laws of Robotics and the Ethics of AI.md",
       "en\\Reflections\\Artifical Intellegence\\Development Cycle and Types of AI Deployment Study Notes.md",
       "en\\Reflections\\Artifical Intellegence\\SWOT.md",
-      "en\\Reflections\\Artifical Intellegence\\Turing Awards in Data Management.md",
       "en\\Web Development\\Basics\\Beginner's Guide to How to Use Bootstrap (Utilities, Responsiveness).md",
       "en\\Web Development\\Basics\\HTML VS Code Shortcut.md",
       "en\\Web Development\\Basics\\How to Publish and Deploy Websites Using Github Pages.md",
@@ -330,28 +324,6 @@
             "path": "en\\AI and ML Algorithms\\Bayes Nets\\D-Separation.md"
           }
         ],
-        "Data Processing": [
-          {
-            "title": "Flink",
-            "path": "en\\AI and ML Algorithms\\Data Processing\\Flink.md"
-          },
-          {
-            "title": "Hadoop",
-            "path": "en\\AI and ML Algorithms\\Data Processing\\Hadoop.md"
-          },
-          {
-            "title": "Hive",
-            "path": "en\\AI and ML Algorithms\\Data Processing\\Hive.md"
-          },
-          {
-            "title": "SQL Database Structure and Common Phrases",
-            "path": "en\\AI and ML Algorithms\\Data Processing\\SQL Database Structure and Common Phrases.md"
-          },
-          {
-            "title": "Spark",
-            "path": "en\\AI and ML Algorithms\\Data Processing\\Spark.md"
-          }
-        ],
         "Game Agents": [
           {
             "title": "(Adversarial Search) Minimax and Alpha-Beta Pruning (Game Agents)",
@@ -496,10 +468,6 @@
           {
             "title": "SWOT",
             "path": "en\\Reflections\\Artifical Intellegence\\SWOT.md"
-          },
-          {
-            "title": "Turing Awards in Data Management",
-            "path": "en\\Reflections\\Artifical Intellegence\\Turing Awards in Data Management.md"
           }
         ]
       },
